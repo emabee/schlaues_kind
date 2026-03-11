@@ -1,0 +1,84 @@
+_version: 2
+About SchlauesKind:
+  en: About SchlauesKind
+  de: Über SchlauesKind
+Version:
+  en: Version
+  de: Version
+_about_1:
+  en: SchlauesKind is a program to learn important things.
+  de: SchlauesKind ist ein Programm zum Lernen von wichtigen Dingen.
+_about_3:
+  en: SchlauesKind is open source software, licensed under the MIT License. You can find the source code on GitHub.
+  de: SchlauesKind ist Open Source Software, unter MIT Lizenz. Der Code steht auf GitHub.
+_cancel:
+  en: Cancel
+  de: Abbrechen
+_next_declination:
+  en: next declination
+  de: Nächste Deklination
+_repeat:
+  en: repeat
+  de: Wiederholen
+_next_verb:
+  en: Next Verb
+  de: Nächstes Verb
+About %{name}:
+  en: About %{name}
+  de: Über %{name}
+Unregelmässige Verben:
+  en: Irregular Verbs
+  de: Unregelmässige Verben
+Unregelmässige Verben ausdrucken:
+  en: Print Irregular Verbs
+  de: Unregelmässige Verben ausdrucken
+Unregelmässige Verben üben:
+  en: Practice Irregular Verbs
+  de: Unregelmässige Verben üben
+Knifflige Wörter:
+  de: Knifflige Wörter
+  en: Tricky Words
+_next_word:
+  en: Next tricky word
+  de: Nächstes kniffliges Wort
+Long_tricky_words:
+  en: Long
+  de: Lang
+Medium_tricky_words:
+  en: Medium length
+  de: Mittellang
+Short_tricky_words:
+  en: Short
+  de: Kurz
+choose_list_type:
+  en: Schwierigkeit wählen
+  de: Schwierigkeit wählen
+_calculate_until_it_smokes:
+  de: Rechnen, bis es raucht
+  en: Calculate until it smokes
+_divide:
+  en: Divide
+  de: Dividieren
+_multiply:
+  en: Multiply
+  de: Multiplizieren
+_next_calculation:
+  en: Next calculation
+  de: Nächste Berechnung
+_next_tricky_word:
+  en: Next tricky word
+  de: Nächstes kniffliges Wort
+_show_result:
+  en: Show result
+  de: Ergebnis anzeigen
+_subtract:
+  en: Subtract
+  de: Subtrahieren
+choose_operator:
+  en: Choose operator
+  de: Operator wählen
+_add:
+  en: Add
+  de: Addieren
+
+

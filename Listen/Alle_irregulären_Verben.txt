@@ -1,0 +1,2405 @@
+[
+  {
+    "infinitiv": "backen",
+    "praesens": {
+      "ich": "backe",
+      "du": "bäckst",
+      "er_sie_es": "bäckt",
+      "wir": "backen",
+      "ihr": "backt",
+      "sie": "backen"
+    },
+    "praeteritum": {
+      "ich": "buk",
+      "du": "bukst",
+      "er_sie_es": "buk",
+      "wir": "buken",
+      "ihr": "bukt",
+      "sie": "buken"
+    },
+    "perfekt": {
+      "ich": "habe gebacken",
+      "du": "hast gebacken",
+      "er_sie_es": "hat gebacken",
+      "wir": "haben gebacken",
+      "ihr": "habt gebacken",
+      "sie": "haben gebacken"
+    }
+  },
+  {
+    "infinitiv": "befehlen",
+    "praesens": {
+      "ich": "befehle",
+      "du": "befiehlst",
+      "er_sie_es": "befiehlt",
+      "wir": "befehlen",
+      "ihr": "befehlt",
+      "sie": "befehlen"
+    },
+    "praeteritum": {
+      "ich": "befahl",
+      "du": "befahlst",
+      "er_sie_es": "befahl",
+      "wir": "befahlen",
+      "ihr": "befahlt",
+      "sie": "befahlen"
+    },
+    "perfekt": {
+      "ich": "habe befohlen",
+      "du": "hast befohlen",
+      "er_sie_es": "hat befohlen",
+      "wir": "haben befohlen",
+      "ihr": "habt befohlen",
+      "sie": "haben befohlen"
+    }
+  },
+  {
+    "infinitiv": "beginnen",
+    "praesens": {
+      "ich": "beginne",
+      "du": "beginnst",
+      "er_sie_es": "beginnt",
+      "wir": "beginnen",
+      "ihr": "beginnt",
+      "sie": "beginnen"
+    },
+    "praeteritum": {
+      "ich": "begann",
+      "du": "begannst",
+      "er_sie_es": "begann",
+      "wir": "begannen",
+      "ihr": "begannt",
+      "sie": "begannen"
+    },
+    "perfekt": {
+      "ich": "habe begonnen",
+      "du": "hast begonnen",
+      "er_sie_es": "hat begonnen",
+      "wir": "haben begonnen",
+      "ihr": "habt begonnen",
+      "sie": "haben begonnen"
+    }
+  },
+  {
+    "infinitiv": "beißen",
+    "praesens": {
+      "ich": "beiße",
+      "du": "beißt",
+      "er_sie_es": "beißt",
+      "wir": "beißen",
+      "ihr": "beißt",
+      "sie": "beißen"
+    },
+    "praeteritum": {
+      "ich": "biss",
+      "du": "bissest",
+      "er_sie_es": "biss",
+      "wir": "bissen",
+      "ihr": "bisst",
+      "sie": "bissen"
+    },
+    "perfekt": {
+      "ich": "habe gebissen",
+      "du": "hast gebissen",
+      "er_sie_es": "hat gebissen",
+      "wir": "haben gebissen",
+      "ihr": "habt gebissen",
+      "sie": "haben gebissen"
+    }
+  },
+  {
+    "infinitiv": "bergen",
+    "praesens": {
+      "ich": "berge",
+      "du": "birgst",
+      "er_sie_es": "birgt",
+      "wir": "bergen",
+      "ihr": "bergt",
+      "sie": "bergen"
+    },
+    "praeteritum": {
+      "ich": "barg",
+      "du": "bargst",
+      "er_sie_es": "barg",
+      "wir": "bargen",
+      "ihr": "bargt",
+      "sie": "bargen"
+    },
+    "perfekt": {
+      "ich": "habe geborgen",
+      "du": "hast geborgen",
+      "er_sie_es": "hat geborgen",
+      "wir": "haben geborgen",
+      "ihr": "habt geborgen",
+      "sie": "haben geborgen"
+    }
+  },
+  {
+    "infinitiv": "bersten",
+    "praesens": {
+      "ich": "berste",
+      "du": "berstest",
+      "er_sie_es": "berstet",
+      "wir": "bersten",
+      "ihr": "berstet",
+      "sie": "bersten"
+    },
+    "praeteritum": {
+      "ich": "barst",
+      "du": "barst",
+      "er_sie_es": "barst",
+      "wir": "barsten",
+      "ihr": "barstet",
+      "sie": "barsten"
+    },
+    "perfekt": {
+      "ich": "bin geborsten",
+      "du": "bist geborsten",
+      "er_sie_es": "ist geborsten",
+      "wir": "sind geborsten",
+      "ihr": "seid geborsten",
+      "sie": "sind geborsten"
+    }
+  },
+  {
+    "infinitiv": "betrügen",
+    "praesens": {
+      "ich": "betrüge",
+      "du": "betrügst",
+      "er_sie_es": "betrügt",
+      "wir": "betrügen",
+      "ihr": "betrügt",
+      "sie": "betrügen"
+    },
+    "praeteritum": {
+      "ich": "betrog",
+      "du": "betrogst",
+      "er_sie_es": "betrog",
+      "wir": "betrogen",
+      "ihr": "betrogt",
+      "sie": "betrogen"
+    },
+    "perfekt": {
+      "ich": "habe betrogen",
+      "du": "hast betrogen",
+      "er_sie_es": "hat betrogen",
+      "wir": "haben betrogen",
+      "ihr": "habt betrogen",
+      "sie": "haben betrogen"
+    }
+  },
+  {
+    "infinitiv": "bewegen (stark)",
+    "praesens": {
+      "ich": "bewege",
+      "du": "bewegst",
+      "er_sie_es": "bewegt",
+      "wir": "bewegen",
+      "ihr": "bewegt",
+      "sie": "bewegen"
+    },
+    "praeteritum": {
+      "ich": "bewog",
+      "du": "bewogst",
+      "er_sie_es": "bewog",
+      "wir": "bewogen",
+      "ihr": "bewogt",
+      "sie": "bewogen"
+    },
+    "perfekt": {
+      "ich": "habe bewogen",
+      "du": "hast bewogen",
+      "er_sie_es": "hat bewogen",
+      "wir": "haben bewogen",
+      "ihr": "habt bewogen",
+      "sie": "haben bewogen"
+    }
+  },
+  {
+    "infinitiv": "biegen",
+    "praesens": {
+      "ich": "biege",
+      "du": "biegst",
+      "er_sie_es": "biegt",
+      "wir": "biegen",
+      "ihr": "biegt",
+      "sie": "biegen"
+    },
+    "praeteritum": {
+      "ich": "bog",
+      "du": "bogst",
+      "er_sie_es": "bog",
+      "wir": "bogen",
+      "ihr": "bogt",
+      "sie": "bogen"
+    },
+    "perfekt": {
+      "ich": "habe gebogen",
+      "du": "hast gebogen",
+      "er_sie_es": "hat gebogen",
+      "wir": "haben gebogen",
+      "ihr": "habt gebogen",
+      "sie": "haben gebogen"
+    }
+  },
+  {
+    "infinitiv": "bieten",
+    "praesens": {
+      "ich": "biete",
+      "du": "bietest",
+      "er_sie_es": "bietet",
+      "wir": "bieten",
+      "ihr": "bietet",
+      "sie": "bieten"
+    },
+    "praeteritum": {
+      "ich": "bot",
+      "du": "botst",
+      "er_sie_es": "bot",
+      "wir": "boten",
+      "ihr": "botet",
+      "sie": "boten"
+    },
+    "perfekt": {
+      "ich": "habe geboten",
+      "du": "hast geboten",
+      "er_sie_es": "hat geboten",
+      "wir": "haben geboten",
+      "ihr": "habt geboten",
+      "sie": "haben geboten"
+    }
+  },
+  {
+    "infinitiv": "binden",
+    "praesens": {
+      "ich": "binde",
+      "du": "bindest",
+      "er_sie_es": "bindet",
+      "wir": "binden",
+      "ihr": "bindet",
+      "sie": "binden"
+    },
+    "praeteritum": {
+      "ich": "band",
+      "du": "bandst",
+      "er_sie_es": "band",
+      "wir": "banden",
+      "ihr": "bandet",
+      "sie": "banden"
+    },
+    "perfekt": {
+      "ich": "habe gebunden",
+      "du": "hast gebunden",
+      "er_sie_es": "hat gebunden",
+      "wir": "haben gebunden",
+      "ihr": "habt gebunden",
+      "sie": "haben gebunden"
+    }
+  },
+  {
+    "infinitiv": "bitten",
+    "praesens": {
+      "ich": "bitte",
+      "du": "bittest",
+      "er_sie_es": "bittet",
+      "wir": "bitten",
+      "ihr": "bittet",
+      "sie": "bitten"
+    },
+    "praeteritum": {
+      "ich": "bat",
+      "du": "batst",
+      "er_sie_es": "bat",
+      "wir": "baten",
+      "ihr": "batet",
+      "sie": "baten"
+    },
+    "perfekt": {
+      "ich": "habe gebeten",
+      "du": "hast gebeten",
+      "er_sie_es": "hat gebeten",
+      "wir": "haben gebeten",
+      "ihr": "habt gebeten",
+      "sie": "haben gebeten"
+    }
+  },
+  {
+    "infinitiv": "bleiben",
+    "praesens": {
+      "ich": "bleibe",
+      "du": "bleibst",
+      "er_sie_es": "bleibt",
+      "wir": "bleiben",
+      "ihr": "bleibt",
+      "sie": "bleiben"
+    },
+    "praeteritum": {
+      "ich": "blieb",
+      "du": "bliebst",
+      "er_sie_es": "blieb",
+      "wir": "blieben",
+      "ihr": "bliebt",
+      "sie": "blieben"
+    },
+    "perfekt": {
+      "ich": "bin geblieben",
+      "du": "bist geblieben",
+      "er_sie_es": "ist geblieben",
+      "wir": "sind geblieben",
+      "ihr": "seid geblieben",
+      "sie": "sind geblieben"
+    }
+  },
+  {
+    "infinitiv": "braten",
+    "praesens": {
+      "ich": "brate",
+      "du": "brätst",
+      "er_sie_es": "brät",
+      "wir": "braten",
+      "ihr": "bratet",
+      "sie": "braten"
+    },
+    "praeteritum": {
+      "ich": "briet",
+      "du": "brietst",
+      "er_sie_es": "briet",
+      "wir": "brieten",
+      "ihr": "brietet",
+      "sie": "brieten"
+    },
+    "perfekt": {
+      "ich": "habe gebraten",
+      "du": "hast gebraten",
+      "er_sie_es": "hat gebraten",
+      "wir": "haben gebraten",
+      "ihr": "habt gebraten",
+      "sie": "haben gebraten"
+    }
+  },
+  {
+    "infinitiv": "brechen",
+    "praesens": {
+      "ich": "breche",
+      "du": "brichst",
+      "er_sie_es": "bricht",
+      "wir": "brechen",
+      "ihr": "brecht",
+      "sie": "brechen"
+    },
+    "praeteritum": {
+      "ich": "brach",
+      "du": "brachst",
+      "er_sie_es": "brach",
+      "wir": "brachen",
+      "ihr": "bracht",
+      "sie": "brachen"
+    },
+    "perfekt": {
+      "ich": "habe gebrochen",
+      "du": "hast gebrochen",
+      "er_sie_es": "hat gebrochen",
+      "wir": "haben gebrochen",
+      "ihr": "habt gebrochen",
+      "sie": "haben gebrochen"
+    }
+  },
+  {
+    "infinitiv": "bringen",
+    "praesens": {
+      "ich": "bringe",
+      "du": "bringst",
+      "er_sie_es": "bringt",
+      "wir": "bringen",
+      "ihr": "bringt",
+      "sie": "bringen"
+    },
+    "praeteritum": {
+      "ich": "brachte",
+      "du": "brachtest",
+      "er_sie_es": "brachte",
+      "wir": "brachten",
+      "ihr": "brachtet",
+      "sie": "brachten"
+    },
+    "perfekt": {
+      "ich": "habe gebracht",
+      "du": "hast gebracht",
+      "er_sie_es": "hat gebracht",
+      "wir": "haben gebracht",
+      "ihr": "habt gebracht",
+      "sie": "haben gebracht"
+    }
+  },
+  {
+    "infinitiv": "denken",
+    "praesens": {
+      "ich": "denke",
+      "du": "denkst",
+      "er_sie_es": "denkt",
+      "wir": "denken",
+      "ihr": "denkt",
+      "sie": "denken"
+    },
+    "praeteritum": {
+      "ich": "dachte",
+      "du": "dachtest",
+      "er_sie_es": "dachte",
+      "wir": "dachten",
+      "ihr": "dachtet",
+      "sie": "dachten"
+    },
+    "perfekt": {
+      "ich": "habe gedacht",
+      "du": "hast gedacht",
+      "er_sie_es": "hat gedacht",
+      "wir": "haben gedacht",
+      "ihr": "habt gedacht",
+      "sie": "haben gedacht"
+    }
+  },
+  {
+    "infinitiv": "dürfen",
+    "praesens": {
+      "ich": "darf",
+      "du": "darfst",
+      "er_sie_es": "darf",
+      "wir": "dürfen",
+      "ihr": "dürft",
+      "sie": "dürfen"
+    },
+    "praeteritum": {
+      "ich": "durfte",
+      "du": "durftest",
+      "er_sie_es": "durfte",
+      "wir": "durften",
+      "ihr": "durftet",
+      "sie": "durften"
+    },
+    "perfekt": {
+      "ich": "habe gedurft",
+      "du": "hast gedurft",
+      "er_sie_es": "hat gedurft",
+      "wir": "haben gedurft",
+      "ihr": "habt gedurft",
+      "sie": "haben gedurft"
+    }
+  },
+  {
+    "infinitiv": "dringen",
+    "praesens": {
+      "ich": "dringe",
+      "du": "dringst",
+      "er_sie_es": "dringt",
+      "wir": "dringen",
+      "ihr": "dringt",
+      "sie": "dringen"
+    },
+    "praeteritum": {
+      "ich": "drang",
+      "du": "drangst",
+      "er_sie_es": "drang",
+      "wir": "drangen",
+      "ihr": "drangt",
+      "sie": "drangen"
+    },
+    "perfekt": {
+      "ich": "bin gedrungen",
+      "du": "bist gedrungen",
+      "er_sie_es": "ist gedrungen",
+      "wir": "sind gedrungen",
+      "ihr": "seid gedrungen",
+      "sie": "sind gedrungen"
+    }
+  },
+  {
+    "infinitiv": "empfehlen",
+    "praesens": {
+      "ich": "empfehle",
+      "du": "empfiehlst",
+      "er_sie_es": "empfiehlt",
+      "wir": "empfehlen",
+      "ihr": "empfehlt",
+      "sie": "empfehlen"
+    },
+    "praeteritum": {
+      "ich": "empfahl",
+      "du": "empfahlst",
+      "er_sie_es": "empfahl",
+      "wir": "empfahlen",
+      "ihr": "empfahlt",
+      "sie": "empfahlen"
+    },
+    "perfekt": {
+      "ich": "habe empfohlen",
+      "du": "hast empfohlen",
+      "er_sie_es": "hat empfohlen",
+      "wir": "haben empfohlen",
+      "ihr": "habt empfohlen",
+      "sie": "haben empfohlen"
+    }
+  },
+  {
+    "infinitiv": "essen",
+    "praesens": {
+      "ich": "esse",
+      "du": "isst",
+      "er_sie_es": "isst",
+      "wir": "essen",
+      "ihr": "esst",
+      "sie": "essen"
+    },
+    "praeteritum": {
+      "ich": "aß",
+      "du": "aßest",
+      "er_sie_es": "aß",
+      "wir": "aßen",
+      "ihr": "aßt",
+      "sie": "aßen"
+    },
+    "perfekt": {
+      "ich": "habe gegessen",
+      "du": "hast gegessen",
+      "er_sie_es": "hat gegessen",
+      "wir": "haben gegessen",
+      "ihr": "habt gegessen",
+      "sie": "haben gegessen"
+    }
+  },
+  {
+    "infinitiv": "fahren",
+    "praesens": {
+      "ich": "fahre",
+      "du": "fährst",
+      "er_sie_es": "fährt",
+      "wir": "fahren",
+      "ihr": "fahrt",
+      "sie": "fahren"
+    },
+    "praeteritum": {
+      "ich": "fuhr",
+      "du": "fuhrst",
+      "er_sie_es": "fuhr",
+      "wir": "fuhren",
+      "ihr": "fuhrt",
+      "sie": "fuhren"
+    },
+    "perfekt": {
+      "ich": "bin gefahren",
+      "du": "bist gefahren",
+      "er_sie_es": "ist gefahren",
+      "wir": "sind gefahren",
+      "ihr": "seid gefahren",
+      "sie": "sind gefahren"
+    }
+  },
+  {
+    "infinitiv": "fallen",
+    "praesens": {
+      "ich": "falle",
+      "du": "fällst",
+      "er_sie_es": "fällt",
+      "wir": "fallen",
+      "ihr": "fallt",
+      "sie": "fallen"
+    },
+    "praeteritum": {
+      "ich": "fiel",
+      "du": "fielst",
+      "er_sie_es": "fiel",
+      "wir": "fielen",
+      "ihr": "fielt",
+      "sie": "fielen"
+    },
+    "perfekt": {
+      "ich": "bin gefallen",
+      "du": "bist gefallen",
+      "er_sie_es": "ist gefallen",
+      "wir": "sind gefallen",
+      "ihr": "seid gefallen",
+      "sie": "sind gefallen"
+    }
+  },
+  {
+    "infinitiv": "finden",
+    "praesens": {
+      "ich": "finde",
+      "du": "findest",
+      "er_sie_es": "findet",
+      "wir": "finden",
+      "ihr": "findet",
+      "sie": "finden"
+    },
+    "praeteritum": {
+      "ich": "fand",
+      "du": "fandst",
+      "er_sie_es": "fand",
+      "wir": "fanden",
+      "ihr": "fandet",
+      "sie": "fanden"
+    },
+    "perfekt": {
+      "ich": "habe gefunden",
+      "du": "hast gefunden",
+      "er_sie_es": "hat gefunden",
+      "wir": "haben gefunden",
+      "ihr": "habt gefunden",
+      "sie": "haben gefunden"
+    }
+  },
+  {
+    "infinitiv": "fliegen",
+    "praesens": {
+      "ich": "fliege",
+      "du": "fliegst",
+      "er_sie_es": "fliegt",
+      "wir": "fliegen",
+      "ihr": "fliegt",
+      "sie": "fliegen"
+    },
+    "praeteritum": {
+      "ich": "flog",
+      "du": "flogst",
+      "er_sie_es": "flog",
+      "wir": "flogen",
+      "ihr": "flogt",
+      "sie": "flogen"
+    },
+    "perfekt": {
+      "ich": "bin geflogen",
+      "du": "bist geflogen",
+      "er_sie_es": "ist geflogen",
+      "wir": "sind geflogen",
+      "ihr": "seid geflogen",
+      "sie": "sind geflogen"
+    }
+  },
+  {
+    "infinitiv": "fliehen",
+    "praesens": {
+      "ich": "fliehe",
+      "du": "fliehst",
+      "er_sie_es": "flieht",
+      "wir": "fliehen",
+      "ihr": "flieht",
+      "sie": "fliehen"
+    },
+    "praeteritum": {
+      "ich": "floh",
+      "du": "flohst",
+      "er_sie_es": "floh",
+      "wir": "flohen",
+      "ihr": "floht",
+      "sie": "flohen"
+    },
+    "perfekt": {
+      "ich": "bin geflohen",
+      "du": "bist geflohen",
+      "er_sie_es": "ist geflohen",
+      "wir": "sind geflohen",
+      "ihr": "seid geflohen",
+      "sie": "sind geflohen"
+    }
+  },
+  {
+    "infinitiv": "frieren",
+    "praesens": {
+      "ich": "friere",
+      "du": "frierst",
+      "er_sie_es": "friert",
+      "wir": "frieren",
+      "ihr": "friert",
+      "sie": "frieren"
+    },
+    "praeteritum": {
+      "ich": "fror",
+      "du": "frorst",
+      "er_sie_es": "fror",
+      "wir": "froren",
+      "ihr": "frort",
+      "sie": "froren"
+    },
+    "perfekt": {
+      "ich": "habe gefroren",
+      "du": "hast gefroren",
+      "er_sie_es": "hat gefroren",
+      "wir": "haben gefroren",
+      "ihr": "habt gefroren",
+      "sie": "haben gefroren"
+    }
+  },
+  {
+    "infinitiv": "gebären",
+    "praesens": {
+      "ich": "gebäre",
+      "du": "gebierst",
+      "er_sie_es": "gebiert",
+      "wir": "gebären",
+      "ihr": "gebärt",
+      "sie": "gebären"
+    },
+    "praeteritum": {
+      "ich": "gebar",
+      "du": "gebarst",
+      "er_sie_es": "gebar",
+      "wir": "gebaren",
+      "ihr": "gebart",
+      "sie": "gebaren"
+    },
+    "perfekt": {
+      "ich": "habe geboren",
+      "du": "hast geboren",
+      "er_sie_es": "hat geboren",
+      "wir": "haben geboren",
+      "ihr": "habt geboren",
+      "sie": "haben geboren"
+    }
+  },
+  {
+    "infinitiv": "geben",
+    "praesens": {
+      "ich": "gebe",
+      "du": "gibst",
+      "er_sie_es": "gibt",
+      "wir": "geben",
+      "ihr": "gebt",
+      "sie": "geben"
+    },
+    "praeteritum": {
+      "ich": "gab",
+      "du": "gabst",
+      "er_sie_es": "gab",
+      "wir": "gaben",
+      "ihr": "gabt",
+      "sie": "gaben"
+    },
+    "perfekt": {
+      "ich": "habe gegeben",
+      "du": "hast gegeben",
+      "er_sie_es": "hat gegeben",
+      "wir": "haben gegeben",
+      "ihr": "habt gegeben",
+      "sie": "haben gegeben"
+    }
+  },
+  {
+    "infinitiv": "gedeihen",
+    "praesens": {
+      "ich": "gedeihe",
+      "du": "gedeihst",
+      "er_sie_es": "gedeiht",
+      "wir": "gedeihen",
+      "ihr": "gedeiht",
+      "sie": "gedeihen"
+    },
+    "praeteritum": {
+      "ich": "gedieh",
+      "du": "gediehst",
+      "er_sie_es": "gedieh",
+      "wir": "gediehen",
+      "ihr": "gedieht",
+      "sie": "gediehen"
+    },
+    "perfekt": {
+      "ich": "bin gediehen",
+      "du": "bist gediehen",
+      "er_sie_es": "ist gediehen",
+      "wir": "sind gediehen",
+      "ihr": "seid gediehen",
+      "sie": "sind gediehen"
+    }
+  },
+  {
+    "infinitiv": "gelingen",
+    "praesens": {
+      "ich": "gelinge",
+      "du": "gelingst",
+      "er_sie_es": "gelingt",
+      "wir": "gelingen",
+      "ihr": "gelingt",
+      "sie": "gelingen"
+    },
+    "praeteritum": {
+      "ich": "gelang",
+      "du": "gelangst",
+      "er_sie_es": "gelang",
+      "wir": "gelangen",
+      "ihr": "gelangt",
+      "sie": "gelangen"
+    },
+    "perfekt": {
+      "ich": "bin gelungen",
+      "du": "bist gelungen",
+      "er_sie_es": "ist gelungen",
+      "wir": "sind gelungen",
+      "ihr": "seid gelungen",
+      "sie": "sind gelungen"
+    }
+  },
+  {
+    "infinitiv": "gelten",
+    "praesens": {
+      "ich": "gelte",
+      "du": "giltst",
+      "er_sie_es": "gilt",
+      "wir": "gelten",
+      "ihr": "geltet",
+      "sie": "gelten"
+    },
+    "praeteritum": {
+      "ich": "galt",
+      "du": "galtest",
+      "er_sie_es": "galt",
+      "wir": "galten",
+      "ihr": "galtet",
+      "sie": "galten"
+    },
+    "perfekt": {
+      "ich": "habe gegolten",
+      "du": "hast gegolten",
+      "er_sie_es": "hat gegolten",
+      "wir": "haben gegolten",
+      "ihr": "habt gegolten",
+      "sie": "haben gegolten"
+    }
+  },
+  {
+    "infinitiv": "genießen",
+    "praesens": {
+      "ich": "genieße",
+      "du": "genießt",
+      "er_sie_es": "genießt",
+      "wir": "genießen",
+      "ihr": "genießt",
+      "sie": "genießen"
+    },
+    "praeteritum": {
+      "ich": "genoss",
+      "du": "genossest",
+      "er_sie_es": "genoss",
+      "wir": "genossen",
+      "ihr": "genosst",
+      "sie": "genossen"
+    },
+    "perfekt": {
+      "ich": "habe genossen",
+      "du": "hast genossen",
+      "er_sie_es": "hat genossen",
+      "wir": "haben genossen",
+      "ihr": "habt genossen",
+      "sie": "haben genossen"
+    }
+  },
+  {
+    "infinitiv": "geschehen",
+    "praesens": {
+      "ich": "geschehe",
+      "du": "geschiehst",
+      "er_sie_es": "geschieht",
+      "wir": "geschehen",
+      "ihr": "gescheht",
+      "sie": "geschehen"
+    },
+    "praeteritum": {
+      "ich": "geschah",
+      "du": "geschahst",
+      "er_sie_es": "geschah",
+      "wir": "geschahen",
+      "ihr": "geschah(t)",
+      "sie": "geschahen"
+    },
+    "perfekt": {
+      "ich": "bin geschehen",
+      "du": "bist geschehen",
+      "er_sie_es": "ist geschehen",
+      "wir": "sind geschehen",
+      "ihr": "seid geschehen",
+      "sie": "sind geschehen"
+    }
+  },
+  {
+    "infinitiv": "gewinnen",
+    "praesens": {
+      "ich": "gewinne",
+      "du": "gewinnst",
+      "er_sie_es": "gewinnt",
+      "wir": "gewinnen",
+      "ihr": "gewinnt",
+      "sie": "gewinnen"
+    },
+    "praeteritum": {
+      "ich": "gewann",
+      "du": "gewannst",
+      "er_sie_es": "gewann",
+      "wir": "gewannen",
+      "ihr": "gewannt",
+      "sie": "gewannen"
+    },
+    "perfekt": {
+      "ich": "habe gewonnen",
+      "du": "hast gewonnen",
+      "er_sie_es": "hat gewonnen",
+      "wir": "haben gewonnen",
+      "ihr": "habt gewonnen",
+      "sie": "haben gewonnen"
+    }
+  },
+  {
+    "infinitiv": "gießen",
+    "praesens": {
+      "ich": "gieße",
+      "du": "gießt",
+      "er_sie_es": "gießt",
+      "wir": "gießen",
+      "ihr": "gießt",
+      "sie": "gießen"
+    },
+    "praeteritum": {
+      "ich": "goss",
+      "du": "gossest",
+      "er_sie_es": "goss",
+      "wir": "gossen",
+      "ihr": "gosst",
+      "sie": "gossen"
+    },
+    "perfekt": {
+      "ich": "habe gegossen",
+      "du": "hast gegossen",
+      "er_sie_es": "hat gegossen",
+      "wir": "haben gegossen",
+      "ihr": "habt gegossen",
+      "sie": "haben gegossen"
+    }
+  },
+  {
+    "infinitiv": "graben",
+    "praesens": {
+      "ich": "grabe",
+      "du": "gräbst",
+      "er_sie_es": "gräbt",
+      "wir": "graben",
+      "ihr": "grabt",
+      "sie": "graben"
+    },
+    "praeteritum": {
+      "ich": "grub",
+      "du": "grubst",
+      "er_sie_es": "grub",
+      "wir": "gruben",
+      "ihr": "grubt",
+      "sie": "gruben"
+    },
+    "perfekt": {
+      "ich": "habe gegraben",
+      "du": "hast gegraben",
+      "er_sie_es": "hat gegraben",
+      "wir": "haben gegraben",
+      "ihr": "habt gegraben",
+      "sie": "haben gegraben"
+    }
+  },
+  {
+    "infinitiv": "greifen",
+    "praesens": {
+      "ich": "greife",
+      "du": "greifst",
+      "er_sie_es": "greift",
+      "wir": "greifen",
+      "ihr": "greift",
+      "sie": "greifen"
+    },
+    "praeteritum": {
+      "ich": "griff",
+      "du": "griffst",
+      "er_sie_es": "griff",
+      "wir": "griffen",
+      "ihr": "grifft",
+      "sie": "griffen"
+    },
+    "perfekt": {
+      "ich": "habe gegriffen",
+      "du": "hast gegriffen",
+      "er_sie_es": "hat gegriffen",
+      "wir": "haben gegriffen",
+      "ihr": "habt gegriffen",
+      "sie": "haben gegriffen"
+    }
+  },
+  {
+    "infinitiv": "halten",
+    "praesens": {
+      "ich": "halte",
+      "du": "hältst",
+      "er_sie_es": "hält",
+      "wir": "halten",
+      "ihr": "haltet",
+      "sie": "halten"
+    },
+    "praeteritum": {
+      "ich": "hielt",
+      "du": "hieltest",
+      "er_sie_es": "hielt",
+      "wir": "hielten",
+      "ihr": "hieltet",
+      "sie": "hielten"
+    },
+    "perfekt": {
+      "ich": "habe gehalten",
+      "du": "hast gehalten",
+      "er_sie_es": "hat gehalten",
+      "wir": "haben gehalten",
+      "ihr": "habt gehalten",
+      "sie": "haben gehalten"
+    }
+  },
+  {
+    "infinitiv": "hängen (stark)",
+    "praesens": {
+      "ich": "hänge",
+      "du": "hängst",
+      "er_sie_es": "hängt",
+      "wir": "hängen",
+      "ihr": "hängt",
+      "sie": "hängen"
+    },
+    "praeteritum": {
+      "ich": "hing",
+      "du": "hingst",
+      "er_sie_es": "hing",
+      "wir": "hingen",
+      "ihr": "hingt",
+      "sie": "hingen"
+    },
+    "perfekt": {
+      "ich": "habe gehangen",
+      "du": "hast gehangen",
+      "er_sie_es": "hat gehangen",
+      "wir": "haben gehangen",
+      "ihr": "habt gehangen",
+      "sie": "haben gehangen"
+    }
+  },
+  {
+    "infinitiv": "heben",
+    "praesens": {
+      "ich": "hebe",
+      "du": "hebst",
+      "er_sie_es": "hebt",
+      "wir": "heben",
+      "ihr": "hebt",
+      "sie": "heben"
+    },
+    "praeteritum": {
+      "ich": "hob",
+      "du": "hobst",
+      "er_sie_es": "hob",
+      "wir": "hoben",
+      "ihr": "hobt",
+      "sie": "hoben"
+    },
+    "perfekt": {
+      "ich": "habe gehoben",
+      "du": "hast gehoben",
+      "er_sie_es": "hat gehoben",
+      "wir": "haben gehoben",
+      "ihr": "habt gehoben",
+      "sie": "haben gehoben"
+    }
+  },
+  {
+    "infinitiv": "heißen",
+    "praesens": {
+      "ich": "heiße",
+      "du": "heißt",
+      "er_sie_es": "heißt",
+      "wir": "heißen",
+      "ihr": "heißt",
+      "sie": "heißen"
+    },
+    "praeteritum": {
+      "ich": "hieß",
+      "du": "hießest",
+      "er_sie_es": "hieß",
+      "wir": "hießen",
+      "ihr": "hießt",
+      "sie": "hießen"
+    },
+    "perfekt": {
+      "ich": "habe geheißen",
+      "du": "hast geheißen",
+      "er_sie_es": "hat geheißen",
+      "wir": "haben geheißen",
+      "ihr": "habt geheißen",
+      "sie": "haben geheißen"
+    }
+  },
+  {
+    "infinitiv": "helfen",
+    "praesens": {
+      "ich": "helfe",
+      "du": "hilfst",
+      "er_sie_es": "hilft",
+      "wir": "helfen",
+      "ihr": "helft",
+      "sie": "helfen"
+    },
+    "praeteritum": {
+      "ich": "half",
+      "du": "halfst",
+      "er_sie_es": "half",
+      "wir": "halfen",
+      "ihr": "halft",
+      "sie": "halfen"
+    },
+    "perfekt": {
+      "ich": "habe geholfen",
+      "du": "hast geholfen",
+      "er_sie_es": "hat geholfen",
+      "wir": "haben geholfen",
+      "ihr": "habt geholfen",
+      "sie": "haben geholfen"
+    }
+  },
+  {
+    "infinitiv": "kennen",
+    "praesens": {
+      "ich": "kenne",
+      "du": "kennst",
+      "er_sie_es": "kennt",
+      "wir": "kennen",
+      "ihr": "kennt",
+      "sie": "kennen"
+    },
+    "praeteritum": {
+      "ich": "kannte",
+      "du": "kanntest",
+      "er_sie_es": "kannte",
+      "wir": "kannten",
+      "ihr": "kanntet",
+      "sie": "kannten"
+    },
+    "perfekt": {
+      "ich": "habe gekannt",
+      "du": "hast gekannt",
+      "er_sie_es": "hat gekannt",
+      "wir": "haben gekannt",
+      "ihr": "habt gekannt",
+      "sie": "haben gekannt"
+    }
+  },
+  {
+    "infinitiv": "klingen",
+    "praesens": {
+      "ich": "klinge",
+      "du": "klingst",
+      "er_sie_es": "klingt",
+      "wir": "klingen",
+      "ihr": "klingt",
+      "sie": "klingen"
+    },
+    "praeteritum": {
+      "ich": "klang",
+      "du": "klangst",
+      "er_sie_es": "klang",
+      "wir": "klangen",
+      "ihr": "klangt",
+      "sie": "klangen"
+    },
+    "perfekt": {
+      "ich": "habe geklungen",
+      "du": "hast geklungen",
+      "er_sie_es": "hat geklungen",
+      "wir": "haben geklungen",
+      "ihr": "habt geklungen",
+      "sie": "haben geklungen"
+    }
+  },
+  {
+    "infinitiv": "kommen",
+    "praesens": {
+      "ich": "komme",
+      "du": "kommst",
+      "er_sie_es": "kommt",
+      "wir": "kommen",
+      "ihr": "kommt",
+      "sie": "kommen"
+    },
+    "praeteritum": {
+      "ich": "kam",
+      "du": "kamst",
+      "er_sie_es": "kam",
+      "wir": "kamen",
+      "ihr": "kamt",
+      "sie": "kamen"
+    },
+    "perfekt": {
+      "ich": "bin gekommen",
+      "du": "bist gekommen",
+      "er_sie_es": "ist gekommen",
+      "wir": "sind gekommen",
+      "ihr": "seid gekommen",
+      "sie": "sind gekommen"
+    }
+  },
+  {
+    "infinitiv": "können",
+    "praesens": {
+      "ich": "kann",
+      "du": "kannst",
+      "er_sie_es": "kann",
+      "wir": "können",
+      "ihr": "könnt",
+      "sie": "können"
+    },
+    "praeteritum": {
+      "ich": "konnte",
+      "du": "konntest",
+      "er_sie_es": "konnte",
+      "wir": "konnten",
+      "ihr": "konntet",
+      "sie": "konnten"
+    },
+    "perfekt": {
+      "ich": "habe gekonnt",
+      "du": "hast gekonnt",
+      "er_sie_es": "hat gekonnt",
+      "wir": "haben gekonnt",
+      "ihr": "habt gekonnt",
+      "sie": "haben gekonnt"
+    }
+  },
+  {
+    "infinitiv": "kriechen",
+    "praesens": {
+      "ich": "krieche",
+      "du": "kriechst",
+      "er_sie_es": "kriecht",
+      "wir": "kriechen",
+      "ihr": "kriecht",
+      "sie": "kriechen"
+    },
+    "praeteritum": {
+      "ich": "kroch",
+      "du": "krochst",
+      "er_sie_es": "kroch",
+      "wir": "krochen",
+      "ihr": "krocht",
+      "sie": "krochen"
+    },
+    "perfekt": {
+      "ich": "bin gekrochen",
+      "du": "bist gekrochen",
+      "er_sie_es": "ist gekrochen",
+      "wir": "sind gekrochen",
+      "ihr": "seid gekrochen",
+      "sie": "sind gekrochen"
+    }
+  },
+  {
+    "infinitiv": "laden",
+    "praesens": {
+      "ich": "lade",
+      "du": "lädst",
+      "er_sie_es": "lädt",
+      "wir": "laden",
+      "ihr": "ladet",
+      "sie": "laden"
+    },
+    "praeteritum": {
+      "ich": "lud",
+      "du": "ludst",
+      "er_sie_es": "lud",
+      "wir": "luden",
+      "ihr": "ludt",
+      "sie": "luden"
+    },
+    "perfekt": {
+      "ich": "habe geladen",
+      "du": "hast geladen",
+      "er_sie_es": "hat geladen",
+      "wir": "haben geladen",
+      "ihr": "habt geladen",
+      "sie": "haben geladen"
+    }
+  },
+  {
+    "infinitiv": "lassen",
+    "praesens": {
+      "ich": "lasse",
+      "du": "lässt",
+      "er_sie_es": "lässt",
+      "wir": "lassen",
+      "ihr": "lasst",
+      "sie": "lassen"
+    },
+    "praeteritum": {
+      "ich": "ließ",
+      "du": "ließest",
+      "er_sie_es": "ließ",
+      "wir": "ließen",
+      "ihr": "ließt",
+      "sie": "ließen"
+    },
+    "perfekt": {
+      "ich": "habe gelassen",
+      "du": "hast gelassen",
+      "er_sie_es": "hat gelassen",
+      "wir": "haben gelassen",
+      "ihr": "habt gelassen",
+      "sie": "haben gelassen"
+    }
+  },
+  {
+    "infinitiv": "laufen",
+    "praesens": {
+      "ich": "laufe",
+      "du": "läufst",
+      "er_sie_es": "läuft",
+      "wir": "laufen",
+      "ihr": "lauft",
+      "sie": "laufen"
+    },
+    "praeteritum": {
+      "ich": "lief",
+      "du": "liefst",
+      "er_sie_es": "lief",
+      "wir": "liefen",
+      "ihr": "lieft",
+      "sie": "liefen"
+    },
+    "perfekt": {
+      "ich": "bin gelaufen",
+      "du": "bist gelaufen",
+      "er_sie_es": "ist gelaufen",
+      "wir": "sind gelaufen",
+      "ihr": "seid gelaufen",
+      "sie": "sind gelaufen"
+    }
+  },
+  {
+    "infinitiv": "leiden",
+    "praesens": {
+      "ich": "leide",
+      "du": "leidest",
+      "er_sie_es": "leidet",
+      "wir": "leiden",
+      "ihr": "leidet",
+      "sie": "leiden"
+    },
+    "praeteritum": {
+      "ich": "litt",
+      "du": "littest",
+      "er_sie_es": "litt",
+      "wir": "litten",
+      "ihr": "littet",
+      "sie": "litten"
+    },
+    "perfekt": {
+      "ich": "habe gelitten",
+      "du": "hast gelitten",
+      "er_sie_es": "hat gelitten",
+      "wir": "haben gelitten",
+      "ihr": "habt gelitten",
+      "sie": "haben gelitten"
+    }
+  },
+  {
+    "infinitiv": "leihen",
+    "praesens": {
+      "ich": "leihe",
+      "du": "leihst",
+      "er_sie_es": "leiht",
+      "wir": "leihen",
+      "ihr": "leiht",
+      "sie": "leihen"
+    },
+    "praeteritum": {
+      "ich": "lieh",
+      "du": "liehst",
+      "er_sie_es": "lieh",
+      "wir": "liehen",
+      "ihr": "lieht",
+      "sie": "liehen"
+    },
+    "perfekt": {
+      "ich": "habe geliehen",
+      "du": "hast geliehen",
+      "er_sie_es": "hat geliehen",
+      "wir": "haben geliehen",
+      "ihr": "habt geliehen",
+      "sie": "haben geliehen"
+    }
+  },
+  {
+    "infinitiv": "lesen",
+    "praesens": {
+      "ich": "lese",
+      "du": "liest",
+      "er_sie_es": "liest",
+      "wir": "lesen",
+      "ihr": "lest",
+      "sie": "lesen"
+    },
+    "praeteritum": {
+      "ich": "las",
+      "du": "lasest",
+      "er_sie_es": "las",
+      "wir": "lasen",
+      "ihr": "last",
+      "sie": "lasen"
+    },
+    "perfekt": {
+      "ich": "habe gelesen",
+      "du": "hast gelesen",
+      "er_sie_es": "hat gelesen",
+      "wir": "haben gelesen",
+      "ihr": "habt gelesen",
+      "sie": "haben gelesen"
+    }
+  },
+  {
+    "infinitiv": "liegen",
+    "praesens": {
+      "ich": "liege",
+      "du": "liegst",
+      "er_sie_es": "liegt",
+      "wir": "liegen",
+      "ihr": "liegt",
+      "sie": "liegen"
+    },
+    "praeteritum": {
+      "ich": "lag",
+      "du": "lagst",
+      "er_sie_es": "lag",
+      "wir": "lagen",
+      "ihr": "lagt",
+      "sie": "lagen"
+    },
+    "perfekt": {
+      "ich": "habe gelegen",
+      "du": "hast gelegen",
+      "er_sie_es": "hat gelegen",
+      "wir": "haben gelegen",
+      "ihr": "habt gelegen",
+      "sie": "haben gelegen"
+    }
+  },
+  {
+    "infinitiv": "lügen",
+    "praesens": {
+      "ich": "lüge",
+      "du": "lügst",
+      "er_sie_es": "lügt",
+      "wir": "lügen",
+      "ihr": "lügt",
+      "sie": "lügen"
+    },
+    "praeteritum": {
+      "ich": "log",
+      "du": "logst",
+      "er_sie_es": "log",
+      "wir": "logen",
+      "ihr": "logt",
+      "sie": "logen"
+    },
+    "perfekt": {
+      "ich": "habe gelogen",
+      "du": "hast gelogen",
+      "er_sie_es": "hat gelogen",
+      "wir": "haben gelogen",
+      "ihr": "habt gelogen",
+      "sie": "haben gelogen"
+    }
+  },
+  {
+    "infinitiv": "meiden",
+    "praesens": {
+      "ich": "meide",
+      "du": "meidest",
+      "er_sie_es": "meidet",
+      "wir": "meiden",
+      "ihr": "meidet",
+      "sie": "meiden"
+    },
+    "praeteritum": {
+      "ich": "mied",
+      "du": "miedest",
+      "er_sie_es": "mied",
+      "wir": "mieden",
+      "ihr": "miedet",
+      "sie": "mieden"
+    },
+    "perfekt": {
+      "ich": "habe gemieden",
+      "du": "hast gemieden",
+      "er_sie_es": "hat gemieden",
+      "wir": "haben gemieden",
+      "ihr": "habt gemieden",
+      "sie": "haben gemieden"
+    }
+  },
+  {
+    "infinitiv": "messen",
+    "praesens": {
+      "ich": "messe",
+      "du": "misst",
+      "er_sie_es": "misst",
+      "wir": "messen",
+      "ihr": "messt",
+      "sie": "messen"
+    },
+    "praeteritum": {
+      "ich": "maß",
+      "du": "maßest",
+      "er_sie_es": "maß",
+      "wir": "maßen",
+      "ihr": "maßt",
+      "sie": "maßen"
+    },
+    "perfekt": {
+      "ich": "habe gemessen",
+      "du": "hast gemessen",
+      "er_sie_es": "hat gemessen",
+      "wir": "haben gemessen",
+      "ihr": "habt gemessen",
+      "sie": "haben gemessen"
+    }
+  },
+  {
+    "infinitiv": "mögen",
+    "praesens": {
+      "ich": "mag",
+      "du": "magst",
+      "er_sie_es": "mag",
+      "wir": "mögen",
+      "ihr": "mögt",
+      "sie": "mögen"
+    },
+    "praeteritum": {
+      "ich": "mochte",
+      "du": "mochtest",
+      "er_sie_es": "mochte",
+      "wir": "mochten",
+      "ihr": "mochtet",
+      "sie": "mochten"
+    },
+    "perfekt": {
+      "ich": "habe gemocht",
+      "du": "hast gemocht",
+      "er_sie_es": "hat gemocht",
+      "wir": "haben gemocht",
+      "ihr": "habt gemocht",
+      "sie": "haben gemocht"
+    }
+  },
+  {
+    "infinitiv": "müssen",
+    "praesens": {
+      "ich": "muss",
+      "du": "musst",
+      "er_sie_es": "muss",
+      "wir": "müssen",
+      "ihr": "müsst",
+      "sie": "müssen"
+    },
+    "praeteritum": {
+      "ich": "musste",
+      "du": "musstest",
+      "er_sie_es": "musste",
+      "wir": "mussten",
+      "ihr": "musstet",
+      "sie": "mussten"
+    },
+    "perfekt": {
+      "ich": "habe gemusst",
+      "du": "hast gemusst",
+      "er_sie_es": "hat gemusst",
+      "wir": "haben gemusst",
+      "ihr": "habt gemusst",
+      "sie": "haben gemusst"
+    }
+  },
+  {
+    "infinitiv": "nehmen",
+    "praesens": {
+      "ich": "nehme",
+      "du": "nimmst",
+      "er_sie_es": "nimmt",
+      "wir": "nehmen",
+      "ihr": "nehmt",
+      "sie": "nehmen"
+    },
+    "praeteritum": {
+      "ich": "nahm",
+      "du": "nahmst",
+      "er_sie_es": "nahm",
+      "wir": "nahmen",
+      "ihr": "nahmt",
+      "sie": "nahmen"
+    },
+    "perfekt": {
+      "ich": "habe genommen",
+      "du": "hast genommen",
+      "er_sie_es": "hat genommen",
+      "wir": "haben genommen",
+      "ihr": "habt genommen",
+      "sie": "haben genommen"
+    }
+  },
+  {
+    "infinitiv": "nennen",
+    "praesens": {
+      "ich": "nenne",
+      "du": "nennst",
+      "er_sie_es": "nennt",
+      "wir": "nennen",
+      "ihr": "nennt",
+      "sie": "nennen"
+    },
+    "praeteritum": {
+      "ich": "nannte",
+      "du": "nanntest",
+      "er_sie_es": "nannte",
+      "wir": "nannten",
+      "ihr": "nanntet",
+      "sie": "nannten"
+    },
+    "perfekt": {
+      "ich": "habe genannt",
+      "du": "hast genannt",
+      "er_sie_es": "hat genannt",
+      "wir": "haben genannt",
+      "ihr": "habt genannt",
+      "sie": "haben genannt"
+    }
+  },
+  {
+    "infinitiv": "pfeifen",
+    "praesens": {
+      "ich": "pfeife",
+      "du": "pfeifst",
+      "er_sie_es": "pfeift",
+      "wir": "pfeifen",
+      "ihr": "pfeift",
+      "sie": "pfeifen"
+    },
+    "praeteritum": {
+      "ich": "pfiff",
+      "du": "pfiffst",
+      "er_sie_es": "pfiff",
+      "wir": "pfiffen",
+      "ihr": "pfifft",
+      "sie": "pfiffen"
+    },
+    "perfekt": {
+      "ich": "habe gepfiffen",
+      "du": "hast gepfiffen",
+      "er_sie_es": "hat gepfiffen",
+      "wir": "haben gepfiffen",
+      "ihr": "habt gepfiffen",
+      "sie": "haben gepfiffen"
+    }
+  },
+  {
+    "infinitiv": "raten",
+    "praesens": {
+      "ich": "rate",
+      "du": "rätst",
+      "er_sie_es": "rät",
+      "wir": "raten",
+      "ihr": "ratet",
+      "sie": "raten"
+    },
+    "praeteritum": {
+      "ich": "riet",
+      "du": "rietst",
+      "er_sie_es": "riet",
+      "wir": "rieten",
+      "ihr": "rietet",
+      "sie": "rieten"
+    },
+    "perfekt": {
+      "ich": "habe geraten",
+      "du": "hast geraten",
+      "er_sie_es": "hat geraten",
+      "wir": "haben geraten",
+      "ihr": "habt geraten",
+      "sie": "haben geraten"
+    }
+  },
+  {
+    "infinitiv": "reiben",
+    "praesens": {
+      "ich": "reibe",
+      "du": "reibst",
+      "er_sie_es": "reibt",
+      "wir": "reiben",
+      "ihr": "reibt",
+      "sie": "reiben"
+    },
+    "praeteritum": {
+      "ich": "rieb",
+      "du": "riebst",
+      "er_sie_es": "rieb",
+      "wir": "rieben",
+      "ihr": "riebet",
+      "sie": "rieben"
+    },
+    "perfekt": {
+      "ich": "habe gerieben",
+      "du": "hast gerieben",
+      "er_sie_es": "hat gerieben",
+      "wir": "haben gerieben",
+      "ihr": "habt gerieben",
+      "sie": "haben gerieben"
+    }
+  },
+  {
+    "infinitiv": "reißen",
+    "praesens": {
+      "ich": "reiße",
+      "du": "reißt",
+      "er_sie_es": "reißt",
+      "wir": "reißen",
+      "ihr": "reißt",
+      "sie": "reißen"
+    },
+    "praeteritum": {
+      "ich": "riss",
+      "du": "rissest",
+      "er_sie_es": "riss",
+      "wir": "rissen",
+      "ihr": "risst",
+      "sie": "rissen"
+    },
+    "perfekt": {
+      "ich": "habe gerissen",
+      "du": "hast gerissen",
+      "er_sie_es": "hat gerissen",
+      "wir": "haben gerissen",
+      "ihr": "habt gerissen",
+      "sie": "haben gerissen"
+    }
+  },
+  {
+    "infinitiv": "reiten",
+    "praesens": {
+      "ich": "reite",
+      "du": "reitest",
+      "er_sie_es": "reitet",
+      "wir": "reiten",
+      "ihr": "reitet",
+      "sie": "reiten"
+    },
+    "praeteritum": {
+      "ich": "ritt",
+      "du": "rittest",
+      "er_sie_es": "ritt",
+      "wir": "ritten",
+      "ihr": "rittet",
+      "sie": "ritten"
+    },
+    "perfekt": {
+      "ich": "bin geritten",
+      "du": "bist geritten",
+      "er_sie_es": "ist geritten",
+      "wir": "sind geritten",
+      "ihr": "seid geritten",
+      "sie": "sind geritten"
+    }
+  },
+  {
+    "infinitiv": "rennen",
+    "praesens": {
+      "ich": "renne",
+      "du": "rennst",
+      "er_sie_es": "rennt",
+      "wir": "rennen",
+      "ihr": "rennt",
+      "sie": "rennen"
+    },
+    "praeteritum": {
+      "ich": "rannte",
+      "du": "ranntest",
+      "er_sie_es": "rannte",
+      "wir": "rannten",
+      "ihr": "ranntet",
+      "sie": "rannten"
+    },
+    "perfekt": {
+      "ich": "bin gerannt",
+      "du": "bist gerannt",
+      "er_sie_es": "ist gerannt",
+      "wir": "sind gerannt",
+      "ihr": "seid gerannt",
+      "sie": "sind gerannt"
+    }
+  },
+  {
+    "infinitiv": "riechen",
+    "praesens": {
+      "ich": "rieche",
+      "du": "riechst",
+      "er_sie_es": "riecht",
+      "wir": "riechen",
+      "ihr": "riecht",
+      "sie": "riechen"
+    },
+    "praeteritum": {
+      "ich": "roch",
+      "du": "rochst",
+      "er_sie_es": "roch",
+      "wir": "rochen",
+      "ihr": "rocht",
+      "sie": "rochen"
+    },
+    "perfekt": {
+      "ich": "habe gerochen",
+      "du": "hast gerochen",
+      "er_sie_es": "hat gerochen",
+      "wir": "haben gerochen",
+      "ihr": "habt gerochen",
+      "sie": "haben gerochen"
+    }
+  },
+  {
+    "infinitiv": "rufen",
+    "praesens": {
+      "ich": "rufe",
+      "du": "rufst",
+      "er_sie_es": "ruft",
+      "wir": "rufen",
+      "ihr": "ruft",
+      "sie": "rufen"
+    },
+    "praeteritum": {
+      "ich": "rief",
+      "du": "riefst",
+      "er_sie_es": "rief",
+      "wir": "riefen",
+      "ihr": "rieft",
+      "sie": "riefen"
+    },
+    "perfekt": {
+      "ich": "habe gerufen",
+      "du": "hast gerufen",
+      "er_sie_es": "hat gerufen",
+      "wir": "haben gerufen",
+      "ihr": "habt gerufen",
+      "sie": "haben gerufen"
+    }
+  },
+  {
+    "infinitiv": "schlafen",
+    "praesens": {
+      "ich": "schlafe",
+      "du": "schläfst",
+      "er_sie_es": "schläft",
+      "wir": "schlafen",
+      "ihr": "schlaft",
+      "sie": "schlafen"
+    },
+    "praeteritum": {
+      "ich": "schlief",
+      "du": "schliefst",
+      "er_sie_es": "schlief",
+      "wir": "schliefen",
+      "ihr": "schlieft",
+      "sie": "schliefen"
+    },
+    "perfekt": {
+      "ich": "habe geschlafen",
+      "du": "hast geschlafen",
+      "er_sie_es": "hat geschlafen",
+      "wir": "haben geschlafen",
+      "ihr": "habt geschlafen",
+      "sie": "haben geschlafen"
+    }
+  },
+  {
+    "infinitiv": "schreiben",
+    "praesens": {
+      "ich": "schreibe",
+      "du": "schreibst",
+      "er_sie_es": "schreibt",
+      "wir": "schreiben",
+      "ihr": "schreibt",
+      "sie": "schreiben"
+    },
+    "praeteritum": {
+      "ich": "schrieb",
+      "du": "schriebst",
+      "er_sie_es": "schrieb",
+      "wir": "schrieben",
+      "ihr": "schriebt",
+      "sie": "schrieben"
+    },
+    "perfekt": {
+      "ich": "habe geschrieben",
+      "du": "hast geschrieben",
+      "er_sie_es": "hat geschrieben",
+      "wir": "haben geschrieben",
+      "ihr": "habt geschrieben",
+      "sie": "haben geschrieben"
+    }
+  },
+  {
+    "infinitiv": "sehen",
+    "praesens": {
+      "ich": "sehe",
+      "du": "siehst",
+      "er_sie_es": "sieht",
+      "wir": "sehen",
+      "ihr": "seht",
+      "sie": "sehen"
+    },
+    "praeteritum": {
+      "ich": "sah",
+      "du": "sahst",
+      "er_sie_es": "sah",
+      "wir": "sahen",
+      "ihr": "saht",
+      "sie": "sahen"
+    },
+    "perfekt": {
+      "ich": "habe gesehen",
+      "du": "hast gesehen",
+      "er_sie_es": "hat gesehen",
+      "wir": "haben gesehen",
+      "ihr": "habt gesehen",
+      "sie": "haben gesehen"
+    }
+  },
+  {
+    "infinitiv": "sein",
+    "praesens": {
+      "ich": "bin",
+      "du": "bist",
+      "er_sie_es": "ist",
+      "wir": "sind",
+      "ihr": "seid",
+      "sie": "sind"
+    },
+    "praeteritum": {
+      "ich": "war",
+      "du": "warst",
+      "er_sie_es": "war",
+      "wir": "waren",
+      "ihr": "wart",
+      "sie": "waren"
+    },
+    "perfekt": {
+      "ich": "bin gewesen",
+      "du": "bist gewesen",
+      "er_sie_es": "ist gewesen",
+      "wir": "sind gewesen",
+      "ihr": "seid gewesen",
+      "sie": "sind gewesen"
+    }
+  },
+  {
+    "infinitiv": "singen",
+    "praesens": {
+      "ich": "singe",
+      "du": "singst",
+      "er_sie_es": "singt",
+      "wir": "singen",
+      "ihr": "singt",
+      "sie": "singen"
+    },
+    "praeteritum": {
+      "ich": "sang",
+      "du": "sangst",
+      "er_sie_es": "sang",
+      "wir": "sangen",
+      "ihr": "sangt",
+      "sie": "sangen"
+    },
+    "perfekt": {
+      "ich": "habe gesungen",
+      "du": "hast gesungen",
+      "er_sie_es": "hat gesungen",
+      "wir": "haben gesungen",
+      "ihr": "habt gesungen",
+      "sie": "haben gesungen"
+    }
+  },
+  {
+    "infinitiv": "sinken",
+    "praesens": {
+      "ich": "sinke",
+      "du": "sinkst",
+      "er_sie_es": "sinkt",
+      "wir": "sinken",
+      "ihr": "sinkt",
+      "sie": "sinken"
+    },
+    "praeteritum": {
+      "ich": "sank",
+      "du": "sankst",
+      "er_sie_es": "sank",
+      "wir": "sanken",
+      "ihr": "sankt",
+      "sie": "sanken"
+    },
+    "perfekt": {
+      "ich": "bin gesunken",
+      "du": "bist gesunken",
+      "er_sie_es": "ist gesunken",
+      "wir": "sind gesunken",
+      "ihr": "seid gesunken",
+      "sie": "sind gesunken"
+    }
+  },
+  {
+    "infinitiv": "sitzen",
+    "praesens": {
+      "ich": "sitze",
+      "du": "sitzt",
+      "er_sie_es": "sitzt",
+      "wir": "sitzen",
+      "ihr": "sitzt",
+      "sie": "sitzen"
+    },
+    "praeteritum": {
+      "ich": "saß",
+      "du": "saßest",
+      "er_sie_es": "saß",
+      "wir": "saßen",
+      "ihr": "saßt",
+      "sie": "saßen"
+    },
+    "perfekt": {
+      "ich": "habe gesessen",
+      "du": "hast gesessen",
+      "er_sie_es": "hat gesessen",
+      "wir": "haben gesessen",
+      "ihr": "habt gesessen",
+      "sie": "haben gesessen"
+    }
+  },
+  {
+    "infinitiv": "sollen",
+    "praesens": {
+      "ich": "soll",
+      "du": "sollst",
+      "er_sie_es": "soll",
+      "wir": "sollen",
+      "ihr": "sollt",
+      "sie": "sollen"
+    },
+    "praeteritum": {
+      "ich": "sollte",
+      "du": "solltest",
+      "er_sie_es": "sollte",
+      "wir": "sollten",
+      "ihr": "solltet",
+      "sie": "sollten"
+    },
+    "perfekt": {
+      "ich": "habe gesollt",
+      "du": "hast gesollt",
+      "er_sie_es": "hat gesollt",
+      "wir": "haben gesollt",
+      "ihr": "habt gesollt",
+      "sie": "haben gesollt"
+    }
+  },
+  {
+    "infinitiv": "sprechen",
+    "praesens": {
+      "ich": "spreche",
+      "du": "sprichst",
+      "er_sie_es": "spricht",
+      "wir": "sprechen",
+      "ihr": "sprecht",
+      "sie": "sprechen"
+    },
+    "praeteritum": {
+      "ich": "sprach",
+      "du": "sprachst",
+      "er_sie_es": "sprach",
+      "wir": "sprachen",
+      "ihr": "spracht",
+      "sie": "sprachen"
+    },
+    "perfekt": {
+      "ich": "habe gesprochen",
+      "du": "hast gesprochen",
+      "er_sie_es": "hat gesprochen",
+      "wir": "haben gesprochen",
+      "ihr": "habt gesprochen",
+      "sie": "haben gesprochen"
+    }
+  },
+  {
+    "infinitiv": "springen",
+    "praesens": {
+      "ich": "springe",
+      "du": "springst",
+      "er_sie_es": "springt",
+      "wir": "springen",
+      "ihr": "springt",
+      "sie": "springen"
+    },
+    "praeteritum": {
+      "ich": "sprang",
+      "du": "sprangst",
+      "er_sie_es": "sprang",
+      "wir": "sprangen",
+      "ihr": "sprangt",
+      "sie": "sprangen"
+    },
+    "perfekt": {
+      "ich": "bin gesprungen",
+      "du": "bist gesprungen",
+      "er_sie_es": "ist gesprungen",
+      "wir": "sind gesprungen",
+      "ihr": "seid gesprungen",
+      "sie": "sind gesprungen"
+    }
+  },
+  {
+    "infinitiv": "stehen",
+    "praesens": {
+      "ich": "stehe",
+      "du": "stehst",
+      "er_sie_es": "steht",
+      "wir": "stehen",
+      "ihr": "steht",
+      "sie": "stehen"
+    },
+    "praeteritum": {
+      "ich": "stand",
+      "du": "standest",
+      "er_sie_es": "stand",
+      "wir": "standen",
+      "ihr": "standet",
+      "sie": "standen"
+    },
+    "perfekt": {
+      "ich": "habe gestanden",
+      "du": "hast gestanden",
+      "er_sie_es": "hat gestanden",
+      "wir": "haben gestanden",
+      "ihr": "habt gestanden",
+      "sie": "haben gestanden"
+    }
+  },
+  {
+    "infinitiv": "sterben",
+    "praesens": {
+      "ich": "sterbe",
+      "du": "stirbst",
+      "er_sie_es": "stirbt",
+      "wir": "sterben",
+      "ihr": "sterbt",
+      "sie": "sterben"
+    },
+    "praeteritum": {
+      "ich": "starb",
+      "du": "starbst",
+      "er_sie_es": "starb",
+      "wir": "starben",
+      "ihr": "starbt",
+      "sie": "starben"
+    },
+    "perfekt": {
+      "ich": "bin gestorben",
+      "du": "bist gestorben",
+      "er_sie_es": "ist gestorben",
+      "wir": "sind gestorben",
+      "ihr": "seid gestorben",
+      "sie": "sind gestorben"
+    }
+  },
+  {
+    "infinitiv": "tragen",
+    "praesens": {
+      "ich": "trage",
+      "du": "trägst",
+      "er_sie_es": "trägt",
+      "wir": "tragen",
+      "ihr": "tragt",
+      "sie": "tragen"
+    },
+    "praeteritum": {
+      "ich": "trug",
+      "du": "trugst",
+      "er_sie_es": "trug",
+      "wir": "trugen",
+      "ihr": "trugt",
+      "sie": "trugen"
+    },
+    "perfekt": {
+      "ich": "habe getragen",
+      "du": "hast getragen",
+      "er_sie_es": "hat getragen",
+      "wir": "haben getragen",
+      "ihr": "habt getragen",
+      "sie": "haben getragen"
+    }
+  },
+  {
+    "infinitiv": "treffen",
+    "praesens": {
+      "ich": "treffe",
+      "du": "triffst",
+      "er_sie_es": "trifft",
+      "wir": "treffen",
+      "ihr": "trefft",
+      "sie": "treffen"
+    },
+    "praeteritum": {
+      "ich": "traf",
+      "du": "trafst",
+      "er_sie_es": "traf",
+      "wir": "trafen",
+      "ihr": "traft",
+      "sie": "trafen"
+    },
+    "perfekt": {
+      "ich": "habe getroffen",
+      "du": "hast getroffen",
+      "er_sie_es": "hat getroffen",
+      "wir": "haben getroffen",
+      "ihr": "habt getroffen",
+      "sie": "haben getroffen"
+    }
+  },
+  {
+    "infinitiv": "trinken",
+    "praesens": {
+      "ich": "trinke",
+      "du": "trinkst",
+      "er_sie_es": "trinkt",
+      "wir": "trinken",
+      "ihr": "trinkt",
+      "sie": "trinken"
+    },
+    "praeteritum": {
+      "ich": "trank",
+      "du": "trankst",
+      "er_sie_es": "trank",
+      "wir": "tranken",
+      "ihr": "trankt",
+      "sie": "tranken"
+    },
+    "perfekt": {
+      "ich": "habe getrunken",
+      "du": "hast getrunken",
+      "er_sie_es": "hat getrunken",
+      "wir": "haben getrunken",
+      "ihr": "habt getrunken",
+      "sie": "haben getrunken"
+    }
+  },
+  {
+    "infinitiv": "tun",
+    "praesens": {
+      "ich": "tue",
+      "du": "tust",
+      "er_sie_es": "tut",
+      "wir": "tun",
+      "ihr": "tut",
+      "sie": "tun"
+    },
+    "praeteritum": {
+      "ich": "tat",
+      "du": "tatest",
+      "er_sie_es": "tat",
+      "wir": "taten",
+      "ihr": "tatet",
+      "sie": "taten"
+    },
+    "perfekt": {
+      "ich": "habe getan",
+      "du": "hast getan",
+      "er_sie_es": "hat getan",
+      "wir": "haben getan",
+      "ihr": "habt getan",
+      "sie": "haben getan"
+    }
+  },
+  {
+    "infinitiv": "wissen",
+    "praesens": {
+      "ich": "weiß",
+      "du": "weißt",
+      "er_sie_es": "weiß",
+      "wir": "wissen",
+      "ihr": "wisst",
+      "sie": "wissen"
+    },
+    "praeteritum": {
+      "ich": "wusste",
+      "du": "wusstest",
+      "er_sie_es": "wusste",
+      "wir": "wussten",
+      "ihr": "wusstet",
+      "sie": "wussten"
+    },
+    "perfekt": {
+      "ich": "habe gewusst",
+      "du": "hast gewusst",
+      "er_sie_es": "hat gewusst",
+      "wir": "haben gewusst",
+      "ihr": "habt gewusst",
+      "sie": "haben gewusst"
+    }
+  },
+  {
+    "infinitiv": "ziehen",
+    "praesens": {
+      "ich": "ziehe",
+      "du": "ziehst",
+      "er_sie_es": "zieht",
+      "wir": "ziehen",
+      "ihr": "zieht",
+      "sie": "ziehen"
+    },
+    "praeteritum": {
+      "ich": "zog",
+      "du": "zogst",
+      "er_sie_es": "zog",
+      "wir": "zogen",
+      "ihr": "zogt",
+      "sie": "zogen"
+    },
+    "perfekt": {
+      "ich": "bin gezogen",
+      "du": "bist gezogen",
+      "er_sie_es": "ist gezogen",
+      "wir": "sind gezogen",
+      "ihr": "seid gezogen",
+      "sie": "sind gezogen"
+    }
+  },
+  {
+    "infinitiv": "zwingen",
+    "praesens": {
+      "ich": "zwinge",
+      "du": "zwingst",
+      "er_sie_es": "zwingt",
+      "wir": "zwingen",
+      "ihr": "zwingt",
+      "sie": "zwingen"
+    },
+    "praeteritum": {
+      "ich": "zwang",
+      "du": "zwangst",
+      "er_sie_es": "zwang",
+      "wir": "zwangen",
+      "ihr": "zwangt",
+      "sie": "zwangen"
+    },
+    "perfekt": {
+      "ich": "habe gezwungen",
+      "du": "hast gezwungen",
+      "er_sie_es": "hat gezwungen",
+      "wir": "haben gezwungen",
+      "ihr": "habt gezwungen",
+      "sie": "haben gezwungen"
+    }
+  }
+]
