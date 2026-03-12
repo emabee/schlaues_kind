@@ -2,7 +2,7 @@ use crate::{
     data::Data,
     ui::{
         Action,
-        viz::{ModalState, V, WordCategory},
+        viz::{ModalState, V},
     },
 };
 use std::{fs::OpenOptions, io::Write};
@@ -50,15 +50,8 @@ fn act_on_no_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
         }
 
         Action::DeclineVerbs => {
-            if data.verb_indices.is_empty() {
-                data.reset_verb_indices();
-            }
-
             v.modal_state = ModalState::DeclineVerbs {
-                verb_idx: data
-                    .verb_indices
-                    .pop()
-                    .unwrap_or_else(|| unreachable!("No verbs available in act_on_modal.")),
+                verb_idx: data.verbs.next_index(),
                 visibility_level: 0,
             };
         }
@@ -71,7 +64,7 @@ fn act_on_no_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
                 .open("unregelmässige_verben.csv")
                 .unwrap();
 
-            for verb in &data.verbs {
+            for verb in &data.verbs.verbs {
                 file.write_all(
                     format!(
                         "\"{}\",\"{}\",\"{}\"\n",
@@ -84,23 +77,16 @@ fn act_on_no_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
         }
 
         Action::ReadTrickyWords => {
-            let selected_category = WordCategory::default();
-            if data.tricky_words_indices.is_empty() {
-                data.reset_tricky_words_indices(selected_category);
-            }
-
+            const DEFAULT_WORD_LIST_INDEX: usize = 1;
             v.modal_state = ModalState::ReadTrickyWords {
-                word_idx: data
-                    .tricky_words_indices
-                    .pop()
-                    .unwrap_or_else(|| unreachable!("No tricky words available in act_on_modal.")),
-                selected_category,
+                word_list_index: DEFAULT_WORD_LIST_INDEX,
+                word_idx: data.word_lists[DEFAULT_WORD_LIST_INDEX].next_word_index(),
             };
         }
 
         Action::ShowMathBasics => {
             v.modal_state = ModalState::BasicMath {
-                chosen_operator: *data.operation.operator(),
+                current_operator: *data.operation.operator(),
                 show_result: false,
             };
         }
@@ -154,50 +140,35 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
                 visibility_level,
             },
         ) => {
-            if data.verb_indices.is_empty() {
-                data.reset_verb_indices();
-            }
-            *verb_idx = data
-                .verb_indices
-                .pop()
-                .unwrap_or_else(|| unreachable!("No verbs available in act_on_modal."));
+            *verb_idx = data.verbs.next_index();
             *visibility_level = 0;
         }
 
         (
             Action::NextTrickyWord,
             ModalState::ReadTrickyWords {
+                word_list_index,
                 word_idx,
-                selected_category,
             },
         ) => {
-            if data.tricky_words_indices.is_empty() {
-                data.reset_tricky_words_indices(*selected_category);
-            }
-            *word_idx = data
-                .tricky_words_indices
-                .pop()
-                .unwrap(/* OK */);
+            *word_idx = data.word_lists[*word_list_index].next_word_index();
         }
 
         (
-            Action::ChangeTrickyWordCategory,
+            Action::ChangeTrickyWordList(new_list_index),
             ModalState::ReadTrickyWords {
+                word_list_index,
                 word_idx,
-                selected_category,
             },
         ) => {
-            data.reset_tricky_words_indices(*selected_category);
-            *word_idx = data
-                .tricky_words_indices
-                .pop()
-                .unwrap_or_else(|| unreachable!("No tricky words available in act_on_modal."));
+            *word_list_index = new_list_index;
+            *word_idx = data.word_lists[*word_list_index].next_word_index();
         }
 
         (
             Action::NextCalculation,
             ModalState::BasicMath {
-                chosen_operator: _,
+                current_operator: _,
                 show_result,
             },
         ) => {
@@ -208,7 +179,7 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
         (
             Action::ShowResult,
             ModalState::BasicMath {
-                chosen_operator: _,
+                current_operator: _,
                 show_result,
             },
         ) => {

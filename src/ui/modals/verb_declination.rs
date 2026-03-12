@@ -1,6 +1,6 @@
 use crate::{
     controller::Controller,
-    data::verbs::Verb,
+    data::Verb,
     ui::{Action, WIDE_MODAL_WIDTH, modals::button},
 };
 use egui::{Align, Color32, Context, FontFamily, FontId, Id, Layout, Modal, RichText, Sides, Ui};
@@ -99,7 +99,7 @@ pub fn verb_declination(
 fn verb_zeit(
     body: &mut TableBody,
     zeit: &str,
-    pronomen: &crate::data::verbs::Pronomen,
+    pronomen: &crate::data::Pronomen,
     viz_level: isize,
     viz_offset: &mut isize,
 ) {

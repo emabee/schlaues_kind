@@ -1,15 +1,14 @@
 use crate::{
     controller::Controller,
-    ui::{Action, SMALL_MODAL_WIDTH, modals::button, viz::WordCategory},
+    data::WordList,
+    ui::{Action, SMALL_MODAL_WIDTH, modals::button},
 };
 use egui::{Context, FontFamily, FontId, Id, Modal, RichText, Sides};
 
 pub fn tricky_word(
+    word_lists: &[WordList],
+    word_list_index: &usize,
     word_idx: &usize,
-    tricky_short_words: &[String],
-    tricky_words: &[String],
-    tricky_long_words: &[String],
-    selected_category: &mut WordCategory,
     controller: &mut Controller,
     ctx: &Context,
 ) {
@@ -27,33 +26,18 @@ pub fn tricky_word(
 
         ui.separator();
 
-        let before = *selected_category;
+        let mut new_word_list_index = *word_list_index;
         ui.horizontal(|ui| {
             egui::ComboBox::from_id_salt(t!("choose_list_type"))
-                .selected_text(format!("{:?}", selected_category))
+                .selected_text(word_lists[new_word_list_index].description())
                 .show_ui(ui, |ui| {
-                    ui.selectable_value(
-                        selected_category,
-                        WordCategory::Short,
-                        t!("Short_tricky_words"),
-                    );
-                    ui.selectable_value(
-                        selected_category,
-                        WordCategory::Medium,
-                        t!("Medium_tricky_words"),
-                    );
-                    ui.selectable_value(
-                        selected_category,
-                        WordCategory::Long,
-                        t!("Long_tricky_words"),
-                    );
+                    for (idx, word_list) in word_lists.iter().enumerate() {
+                        ui.selectable_value(&mut new_word_list_index, idx, word_list.description());
+                    }
                 });
         });
-        if *selected_category != before {
-            controller.set_action(Action::ChangeTrickyWordCategory);
-            // we cannot render the UI in this frame, because category and index are not in sync
-            // TODO: improve separation of UI and controller
-            return;
+        if *word_list_index != new_word_list_index {
+            controller.set_action(Action::ChangeTrickyWordList(new_word_list_index));
         }
 
         ui.separator();
@@ -63,11 +47,7 @@ pub fn tricky_word(
         ui.horizontal(|ui| {
             ui.add_space(50.);
 
-            let word = match selected_category {
-                WordCategory::Short => &tricky_short_words[*word_idx],
-                WordCategory::Medium => &tricky_words[*word_idx],
-                WordCategory::Long => &tricky_long_words[*word_idx],
-            };
+            let word = &word_lists[*word_list_index].words[*word_idx];
 
             ui.label(
                 RichText::new(word)

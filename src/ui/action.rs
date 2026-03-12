@@ -11,7 +11,7 @@ pub(crate) enum Action {
 
     ReadTrickyWords,
     NextTrickyWord,
-    ChangeTrickyWordCategory,
+    ChangeTrickyWordList(usize),
 
     ShowMathBasics,
     NextCalculation,

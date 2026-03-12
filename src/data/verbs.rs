@@ -1,6 +1,31 @@
 use anyhow::Result;
+use rand::seq::SliceRandom;
 
-const IRREGULAR_VERBS_FILE: &str = "./Listen/Alle_irregulären_Verben.txt";
+pub struct Verbs {
+    pub verbs: Vec<Verb>,
+    indices: Vec<usize>,
+}
+impl Verbs {
+    pub fn read_from_file(file: &str) -> Result<Verbs> {
+        let mut verbs = Verbs {
+            verbs: serde_json::from_str(&std::fs::read_to_string(file)?)?,
+            indices: Vec::default(),
+        };
+        verbs.reset_indices();
+        Ok(verbs)
+    }
+    fn reset_indices(&mut self) {
+        let mut rng = rand::rng();
+        self.indices = (0..self.verbs.len()).collect();
+        self.indices.shuffle(&mut rng);
+    }
+    pub fn next_index(&mut self) -> usize {
+        if self.indices.is_empty() {
+            self.reset_indices();
+        }
+        self.indices.pop().unwrap(/* OK */)
+    }
+}
 
 #[derive(Default, serde::Deserialize, serde::Serialize)]
 pub struct Verb {
@@ -18,9 +43,4 @@ pub struct Pronomen {
     pub wir: String,
     pub ihr: String,
     pub sie: String,
-}
-
-pub fn read_from_file() -> Result<Vec<Verb>> {
-    let verbs: Vec<Verb> = serde_json::from_str(&std::fs::read_to_string(IRREGULAR_VERBS_FILE)?)?;
-    Ok(verbs)
 }

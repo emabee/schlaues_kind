@@ -3,8 +3,7 @@ use crate::{
     controller::Controller,
     data::Data,
     ui::{
-        Action, IMG_BURGER, IMG_LOGO,
-        modals::{math_basic_operation, show_about, tricky_word, verb_declination},
+        Action, IMG_BURGER, IMG_LOGO, modals,
         viz::{ModalState, V},
     },
 };
@@ -42,40 +41,38 @@ impl App for TheApp {
             ModalState::None => {}
 
             ModalState::About => {
-                show_about(&mut self.controller, ctx);
+                modals::show_about(&mut self.controller, ctx);
             }
 
             ModalState::DeclineVerbs {
                 verb_idx,
                 visibility_level,
             } => {
-                verb_declination(
+                modals::verb_declination(
                     verb_idx,
                     visibility_level,
-                    &self.data.verbs,
+                    &self.data.verbs.verbs,
                     &mut self.controller,
                     ctx,
                 );
             }
             ModalState::ReadTrickyWords {
-                ref mut word_idx,
-                selected_category: ref mut selected_tricky_word_category,
+                word_list_index,
+                word_idx,
             } => {
-                tricky_word(
-                    word_idx,
-                    &self.data.tricky_short_words,
-                    &self.data.tricky_words,
-                    &self.data.tricky_long_words,
-                    selected_tricky_word_category,
+                modals::tricky_word(
+                    &self.data.word_lists,
+                    &word_list_index,
+                    &word_idx,
                     &mut self.controller,
                     ctx,
                 );
             }
             ModalState::BasicMath {
-                ref mut chosen_operator,
+                current_operator: ref mut chosen_operator,
                 ref mut show_result,
             } => {
-                math_basic_operation(
+                modals::math_basic_operation(
                     &mut self.data.operation,
                     chosen_operator,
                     show_result,

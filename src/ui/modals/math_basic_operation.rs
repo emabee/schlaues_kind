@@ -1,6 +1,6 @@
 use crate::{
     controller::Controller,
-    data::math_basics::{Operation, Operator},
+    data::{Operation, Operator},
     ui::{Action, SMALL_MODAL_WIDTH, modals::button},
 };
 use egui::{ComboBox, Context, FontFamily, FontId, Id, Modal, RichText, Sides};

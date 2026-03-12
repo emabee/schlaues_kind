@@ -48,7 +48,7 @@ impl Operator {
     }
 }
 
-#[derive(PartialEq, Eq)]
+#[derive(PartialEq, Eq, Default)]
 pub struct Operation {
     operand1: u32,
     operand2: u32,
