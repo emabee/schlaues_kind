@@ -5,6 +5,7 @@ use strum_macros::EnumIter;
 #[derive(PartialEq, Eq, Copy, Clone, Default, EnumIter)]
 pub enum Operator {
     #[default]
+    Add,
     Multiply,
     Divide,
     Subtract,
@@ -15,6 +16,7 @@ impl Operator {
             Self::Multiply => t!("_multiply"),
             Self::Divide => t!("_divide"),
             Self::Subtract => t!("_subtract"),
+            Self::Add => t!("_add"),
         }
     }
     pub fn symbol(&self) -> char {
@@ -22,6 +24,7 @@ impl Operator {
             Self::Multiply => '×',
             Self::Divide => '÷',
             Self::Subtract => '-',
+            Self::Add => '+',
         }
     }
     pub fn calculate(&self, operand1: u32, operand2: u32) -> u32 {
@@ -29,11 +32,13 @@ impl Operator {
             Self::Multiply => operand1 * operand2,
             Self::Divide => operand1 / operand2,
             Self::Subtract => operand1 - operand2,
+            Self::Add => operand1 + operand2,
         }
     }
     pub fn new_operands(&self) -> (u32, u32) {
         let mut rng = rng();
         match self {
+            Self::Add => (rng.random_range(1..50), rng.random_range(1..50)),
             Self::Multiply => (rng.random_range(1..10), rng.random_range(1..10)),
             Self::Divide => {
                 let divisor = rng.random_range(1..10);
