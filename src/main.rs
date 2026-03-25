@@ -21,7 +21,7 @@ mod ui;
 pub const PROG_NAME: &str = env!("CARGO_PKG_NAME");
 pub const PROG_TITLE: &str = "Schlaues Kind!";
 pub const PROG_VERSION: &str = env!("CARGO_PKG_VERSION");
-pub const GITHUB_LINK: &str = "https://github.com/emabee/rust-schlaues_kind";
+pub const GITHUB_LINK: &str = "https://github.com/emabee/schlaues_kind";
 
 pub type Language = (&'static str, &'static str);
 pub const SUPPORTED_LANGUAGES: [Language; 2] = [("en", "English"), ("de", "Deutsch")];

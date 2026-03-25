@@ -35,25 +35,26 @@ impl Operator {
             Self::Add => operand1 + operand2,
         }
     }
+    // todo: make upper limits customizable through UI
     pub fn new_operands(&self) -> (u32, u32) {
         let mut rng = rng();
         match self {
-            Self::Add => (rng.random_range(1..50), rng.random_range(1..50)),
-            Self::Multiply => (rng.random_range(1..10), rng.random_range(1..10)),
+            Self::Add => (rng.random_range(1..80), rng.random_range(1..80)),
+            Self::Multiply => (rng.random_range(1..12), rng.random_range(1..12)),
             Self::Divide => {
-                let divisor = rng.random_range(1..10);
-                let dividend = rng.random_range(1..10) * divisor;
+                let divisor = rng.random_range(1..12);
+                let dividend = rng.random_range(1..12) * divisor;
                 (dividend, divisor)
             }
             Self::Subtract => {
-                let (v1, v2) = (rng.random_range(1..100), rng.random_range(1..100));
+                let (v1, v2) = (rng.random_range(1..150), rng.random_range(1..150));
                 (v1.max(v2), v1.min(v2))
             }
         }
     }
 }
 
-#[derive(PartialEq, Eq, Default)]
+#[derive(PartialEq, Eq)]
 pub struct Operation {
     operand1: u32,
     operand2: u32,

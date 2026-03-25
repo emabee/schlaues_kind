@@ -27,7 +27,7 @@ impl Data {
                 WordList::new(t!("Medium_tricky_words"), TRICKY_WORDS_FILE)?,
                 WordList::new(t!("Long_tricky_words"), TRICKY_LONG_WORDS_FILE)?,
             ],
-            operation: Operation::default(),
+            operation: Operation::new(Operator::default()),
         })
     }
 }
