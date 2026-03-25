@@ -1,5 +1,8 @@
+use rand::Rng;
+
 use crate::{
-    data::Data,
+    data::{Data, Operator},
+    sounds,
     ui::{
         Action,
         viz::{ModalState, V},
@@ -121,6 +124,7 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
             },
         ) => {
             *visibility_level += 1;
+            data.score += 1;
         }
 
         (
@@ -152,6 +156,7 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
             },
         ) => {
             *word_idx = data.word_lists[*word_list_index].next_word_index();
+            data.score += 1 + *word_list_index;
         }
 
         (
@@ -179,10 +184,15 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
         (
             Action::ShowResult,
             ModalState::BasicMath {
-                current_operator: _,
+                current_operator,
                 show_result,
             },
         ) => {
+            data.score += match current_operator {
+                Operator::Add => 2,
+                Operator::Subtract | Operator::Multiply => 3,
+                Operator::Divide => 4,
+            };
             *show_result = true;
         }
 
@@ -198,6 +208,23 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
                 return false;
             }
         }
+    }
+
+    if data.score > 30 {
+        data.score = 0;
+
+        sounds::play(
+            &data.sink,
+            match rand::rng().next_u32() % 6 {
+                0 => sounds::Sound::BellDing,
+                1 => sounds::Sound::BellChord,
+                2 => sounds::Sound::ChristmasBell,
+                3 => sounds::Sound::HandBell,
+                4 => sounds::Sound::ShipBell,
+                5 => sounds::Sound::Nice,
+                6_u32..=u32::MAX => unreachable!(),
+            },
+        );
     }
     true
 }

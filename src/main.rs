@@ -20,6 +20,7 @@ i18n!("locales", fallback = "en");
 
 mod controller;
 mod data;
+mod sounds;
 mod ui;
 
 pub const PROG_NAME: &str = env!("CARGO_PKG_NAME");
