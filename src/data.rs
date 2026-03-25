@@ -8,10 +8,10 @@ pub use word_list::WordList;
 
 use anyhow::Result;
 
-const IRREGULAR_VERBS_FILE: &str = "./Listen/Alle_irregulären_Verben.txt";
-const TRICKY_WORDS_FILE: &str = "./Listen/Knifflige_Wörter.txt";
-const TRICKY_LONG_WORDS_FILE: &str = "./Listen/Lange_knifflige_Wörter.txt";
-const TRICKY_SHORT_WORDS_FILE: &str = "./Listen/Kurze_knifflige_Wörter.txt";
+const IRREGULAR_VERBS: &'static str = include_str!("./assets/lists/Alle_irregulären_Verben.txt");
+const MEDIUM_TRICKY_WORDS: &'static str = include_str!("./assets/lists/Knifflige_Wörter.txt");
+const LONG_TRICKY_WORDS: &'static str = include_str!("./assets/lists/Lange_knifflige_Wörter.txt");
+const SHORT_TRICKY_WORDS: &'static str = include_str!("./assets/lists/Kurze_knifflige_Wörter.txt");
 
 pub struct Data {
     pub verbs: Verbs,
@@ -21,11 +21,11 @@ pub struct Data {
 impl Data {
     pub fn new() -> Result<Self> {
         Ok(Data {
-            verbs: Verbs::read_from_file(IRREGULAR_VERBS_FILE)?,
+            verbs: Verbs::parse(IRREGULAR_VERBS)?,
             word_lists: [
-                WordList::new(t!("Short_tricky_words"), TRICKY_SHORT_WORDS_FILE)?,
-                WordList::new(t!("Medium_tricky_words"), TRICKY_WORDS_FILE)?,
-                WordList::new(t!("Long_tricky_words"), TRICKY_LONG_WORDS_FILE)?,
+                WordList::new(t!("Short_tricky_words"), SHORT_TRICKY_WORDS)?,
+                WordList::new(t!("Medium_tricky_words"), MEDIUM_TRICKY_WORDS)?,
+                WordList::new(t!("Long_tricky_words"), LONG_TRICKY_WORDS)?,
             ],
             operation: Operation::new(Operator::default()),
         })

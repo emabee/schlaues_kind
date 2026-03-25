@@ -25,7 +25,7 @@ pub fn verb_declination(
         ui.horizontal(|ui| {
             ui.add_space(ui.available_width() / 2. - 100.);
             ui.label(
-                RichText::new(&verb.infinitiv)
+                RichText::new(verb.infinitiv)
                     .strong()
                     .font(FontId::new(20., FontFamily::Proportional)),
             );

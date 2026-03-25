@@ -8,19 +8,16 @@ pub struct WordList {
     indices: Vec<usize>,
 }
 impl WordList {
-    pub fn new(description: Cow<str>, file: &str) -> Result<WordList> {
-        let words = Self::read_from_file(file)?;
+    pub fn new(description: Cow<str>, raw: &str) -> Result<WordList> {
+        let words = Self::read_from(raw)?;
         Ok(WordList {
             description: description.to_string(),
             indices: Self::new_indices(&words),
             words,
         })
     }
-    fn read_from_file(file: &str) -> Result<Vec<String>> {
-        let list: Vec<String> = std::fs::read_to_string(file)?
-            .lines()
-            .map(ToString::to_string)
-            .collect();
+    fn read_from(raw: &str) -> Result<Vec<String>> {
+        let list: Vec<String> = raw.lines().map(ToString::to_string).collect();
         Ok(list)
     }
     pub fn description(&self) -> &str {

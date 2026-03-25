@@ -6,9 +6,9 @@ pub struct Verbs {
     indices: Vec<usize>,
 }
 impl Verbs {
-    pub fn read_from_file(file: &str) -> Result<Verbs> {
+    pub fn parse(raw: &'static str) -> Result<Verbs> {
         let mut verbs = Verbs {
-            verbs: serde_json::from_str(&std::fs::read_to_string(file)?)?,
+            verbs: serde_json::from_str(raw)?,
             indices: Vec::default(),
         };
         verbs.reset_indices();
@@ -29,7 +29,7 @@ impl Verbs {
 
 #[derive(Default, serde::Deserialize, serde::Serialize)]
 pub struct Verb {
-    pub infinitiv: String,
+    pub infinitiv: &'static str,
     pub praesens: Pronomen,
     pub praeteritum: Pronomen,
     pub perfekt: Pronomen,
@@ -37,10 +37,10 @@ pub struct Verb {
 
 #[derive(Default, serde::Deserialize, serde::Serialize)]
 pub struct Pronomen {
-    pub ich: String,
-    pub du: String,
-    pub er_sie_es: String,
-    pub wir: String,
-    pub ihr: String,
-    pub sie: String,
+    pub ich: &'static str,
+    pub du: &'static str,
+    pub er_sie_es: &'static str,
+    pub wir: &'static str,
+    pub ihr: &'static str,
+    pub sie: &'static str,
 }
