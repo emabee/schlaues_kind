@@ -110,22 +110,22 @@ fn verb_zeit(
     });
     body.row(25., |mut row| {
         row.col(|ui| {
-            verb_zeit_pronomen(ui, "ich", &pronomen.ich, viz_level, viz_offset);
+            verb_zeit_pronomen(ui, "ich", pronomen.ich, viz_level, viz_offset);
         });
         row.col(|ui| {
-            verb_zeit_pronomen(ui, "du", &pronomen.du, viz_level, viz_offset);
+            verb_zeit_pronomen(ui, "du", pronomen.du, viz_level, viz_offset);
         });
         row.col(|ui| {
-            verb_zeit_pronomen(ui, "er/sie/es", &pronomen.er_sie_es, viz_level, viz_offset);
+            verb_zeit_pronomen(ui, "er/sie/es", pronomen.er_sie_es, viz_level, viz_offset);
         });
         row.col(|ui| {
-            verb_zeit_pronomen(ui, "wir", &pronomen.wir, viz_level, viz_offset);
+            verb_zeit_pronomen(ui, "wir", pronomen.wir, viz_level, viz_offset);
         });
         row.col(|ui| {
-            verb_zeit_pronomen(ui, "ihr", &pronomen.ihr, viz_level, viz_offset);
+            verb_zeit_pronomen(ui, "ihr", pronomen.ihr, viz_level, viz_offset);
         });
         row.col(|ui| {
-            verb_zeit_pronomen(ui, "sie", &pronomen.sie, viz_level, viz_offset);
+            verb_zeit_pronomen(ui, "sie", pronomen.sie, viz_level, viz_offset);
         });
     });
     body.row(10., |mut row| {

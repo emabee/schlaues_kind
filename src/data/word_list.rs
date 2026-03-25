@@ -1,6 +1,4 @@
-use anyhow::Result;
 use rand::seq::SliceRandom;
-use std::borrow::Cow;
 
 pub struct WordList {
     description: String,
@@ -8,17 +6,16 @@ pub struct WordList {
     indices: Vec<usize>,
 }
 impl WordList {
-    pub fn new(description: Cow<str>, raw: &str) -> Result<WordList> {
-        let words = Self::read_from(raw)?;
-        Ok(WordList {
+    pub fn new(description: &str, raw: &str) -> WordList {
+        let words = Self::read_from(raw);
+        WordList {
             description: description.to_string(),
             indices: Self::new_indices(&words),
             words,
-        })
+        }
     }
-    fn read_from(raw: &str) -> Result<Vec<String>> {
-        let list: Vec<String> = raw.lines().map(ToString::to_string).collect();
-        Ok(list)
+    fn read_from(raw: &str) -> Vec<String> {
+        raw.lines().map(ToString::to_string).collect()
     }
     pub fn description(&self) -> &str {
         &self.description

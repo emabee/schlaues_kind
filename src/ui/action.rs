@@ -1,4 +1,4 @@
-#[derive(Default, Debug)]
+#[derive(Default, Copy, Clone, Debug)]
 pub(crate) enum Action {
     #[default]
     None,

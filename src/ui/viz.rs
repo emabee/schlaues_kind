@@ -1,16 +1,15 @@
 use crate::data::Operator;
-use anyhow::Result;
 
 pub struct V {
     // pub base_state: BaseState,
     pub modal_state: ModalState,
 }
 impl V {
-    pub fn new() -> Result<Self> {
-        Ok(Self {
+    pub fn new() -> Self {
+        Self {
             // base_state: BaseState::default(),
             modal_state: ModalState::None,
-        })
+        }
     }
 }
 

@@ -19,7 +19,7 @@ impl Operator {
             Self::Add => t!("_add"),
         }
     }
-    pub fn symbol(&self) -> char {
+    pub fn symbol(self) -> char {
         match self {
             Self::Multiply => '×',
             Self::Divide => '÷',
@@ -27,7 +27,7 @@ impl Operator {
             Self::Add => '+',
         }
     }
-    pub fn calculate(&self, operand1: u32, operand2: u32) -> u32 {
+    pub fn calculate(self, operand1: u32, operand2: u32) -> u32 {
         match self {
             Self::Multiply => operand1 * operand2,
             Self::Divide => operand1 / operand2,
@@ -36,7 +36,7 @@ impl Operator {
         }
     }
     // todo: make upper limits customizable through UI
-    pub fn new_operands(&self) -> (u32, u32) {
+    pub fn new_operands(self) -> (u32, u32) {
         let mut rng = rng();
         match self {
             Self::Add => (rng.random_range(1..80), rng.random_range(1..80)),

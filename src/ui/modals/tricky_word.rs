@@ -7,8 +7,8 @@ use egui::{Context, FontFamily, FontId, Id, Modal, RichText, Sides};
 
 pub fn tricky_word(
     word_lists: &[WordList],
-    word_list_index: &usize,
-    word_idx: &usize,
+    word_list_index: usize,
+    word_idx: usize,
     controller: &mut Controller,
     ctx: &Context,
 ) {
@@ -26,7 +26,7 @@ pub fn tricky_word(
 
         ui.separator();
 
-        let mut new_word_list_index = *word_list_index;
+        let mut new_word_list_index = word_list_index;
         ui.horizontal(|ui| {
             egui::ComboBox::from_id_salt(t!("choose_list_type"))
                 .selected_text(word_lists[new_word_list_index].description())
@@ -36,7 +36,7 @@ pub fn tricky_word(
                     }
                 });
         });
-        if *word_list_index != new_word_list_index {
+        if word_list_index != new_word_list_index {
             controller.set_action(Action::ChangeTrickyWordList(new_word_list_index));
         }
 
@@ -47,7 +47,7 @@ pub fn tricky_word(
         ui.horizontal(|ui| {
             ui.add_space(50.);
 
-            let word = &word_lists[*word_list_index].words[*word_idx];
+            let word = &word_lists[word_list_index].words[word_idx];
 
             ui.label(
                 RichText::new(word)

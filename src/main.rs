@@ -1,3 +1,7 @@
+#![deny(clippy::all)]
+#![deny(clippy::pedantic)]
+#![forbid(unsafe_code)]
+
 use crate::ui::{WIN_HEIGHT, WIN_MIN_HEIGHT, WIN_WIDTH, the_app::TheApp};
 use anyhow::{Result, anyhow};
 use eframe::{NativeOptions, run_native};
@@ -62,9 +66,6 @@ fn run() -> Result<()> {
         }),
     )
     .map_err(|e| anyhow!("Couldn't start GUI, caused by {e:?}"))
-    .unwrap();
-
-    Ok(())
 }
 
 fn load_icon() -> IconData {

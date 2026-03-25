@@ -78,10 +78,8 @@ pub fn math_basic_operation(
                     {
                         controller.set_action(Action::NextCalculation);
                     }
-                } else {
-                    if ui.button(button::next_step(&t!("_show_result"))).clicked() {
-                        controller.set_action(Action::ShowResult);
-                    }
+                } else if ui.button(button::next_step(&t!("_show_result"))).clicked() {
+                    controller.set_action(Action::ShowResult);
                 }
                 if ui.button(button::cancel()).clicked() {
                     controller.set_action(Action::CloseModal);

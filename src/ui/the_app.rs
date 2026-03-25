@@ -21,7 +21,7 @@ impl TheApp {
     pub fn new() -> Result<Self> {
         Ok(TheApp {
             data: Data::new()?,
-            v: V::new()?,
+            v: V::new(),
             controller: Controller::default(),
         })
     }
@@ -62,8 +62,8 @@ impl App for TheApp {
             } => {
                 modals::tricky_word(
                     &self.data.word_lists,
-                    &word_list_index,
-                    &word_idx,
+                    word_list_index,
+                    word_idx,
                     &mut self.controller,
                     ctx,
                 );
