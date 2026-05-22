@@ -12,12 +12,12 @@ use eframe::{App, Frame};
 use egui::{Button, Context, Image, MenuBar, TopBottomPanel};
 
 // MVC pattern
-pub struct TheApp {
-    pub data: Data,
+pub struct TheApp<'a> {
+    pub data: Data<'a>,
     pub v: V,
     pub controller: Controller,
 }
-impl TheApp {
+impl TheApp<'_> {
     pub fn new() -> Result<Self> {
         Ok(TheApp {
             data: Data::new()?,
@@ -27,7 +27,7 @@ impl TheApp {
     }
 }
 
-impl App for TheApp {
+impl App for TheApp<'_> {
     // this method is called each time the UI needs to be updated, which is typically many times per second.
     fn update(&mut self, ctx: &Context, _frame: &mut Frame) {
         // execute action set by the UI code
@@ -80,6 +80,27 @@ impl App for TheApp {
                     ctx,
                 );
             }
+            ModalState::Dictates {
+                ref mut current_series,
+                ref mut current_dictate,
+                ref mut current_line,
+                ref mut edit_line,
+                ref mut edit_line_has_focus,
+                ref mut check_is_on,
+            } => modals::dictate(
+                if *current_series {
+                    &self.data.dictates_2
+                } else {
+                    &self.data.dictates_34
+                },
+                current_dictate,
+                current_line,
+                edit_line,
+                edit_line_has_focus,
+                check_is_on,
+                &mut self.controller,
+                ctx,
+            ),
         }
 
         // show the main UI
@@ -146,6 +167,28 @@ fn burger_menu_button(v: &mut V, controller: &mut Controller, ui: &mut egui::Ui)
                 .clicked()
             {
                 controller.set_action(Action::ShowMathBasics);
+            }
+
+            ui.separator();
+
+            if ui
+                .add_enabled(
+                    v.modal_state.is_ready_for_modal(),
+                    Button::new(format!("{} 2 …", t!("_dictate"))),
+                )
+                .clicked()
+            {
+                controller.set_action(Action::Dictate(false));
+            }
+
+            if ui
+                .add_enabled(
+                    v.modal_state.is_ready_for_modal(),
+                    Button::new(format!("{} 3, 4 …", t!("_dictate"))),
+                )
+                .clicked()
+            {
+                controller.set_action(Action::Dictate(true));
             }
 
             ui.separator();

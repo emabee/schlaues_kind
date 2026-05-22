@@ -1,0 +1,3 @@
+The files in ./lists were created with the help of ChatGPT.
+
+The sound files in ./sounds were downloaded from <https://pixabay.com/sound-effects>.

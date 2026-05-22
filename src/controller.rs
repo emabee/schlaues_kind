@@ -1,5 +1,3 @@
-use rand::Rng;
-
 use crate::{
     data::{Data, Operator},
     sounds,
@@ -8,6 +6,7 @@ use crate::{
         viz::{ModalState, V},
     },
 };
+use rand::{Rng, RngExt};
 use std::{fs::OpenOptions, io::Write};
 
 // The controller is responsible for managing the state of the application and the UI,
@@ -94,6 +93,24 @@ fn act_on_no_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
             };
         }
 
+        Action::Dictate(b) => {
+            v.modal_state = ModalState::Dictates {
+                current_series: b,
+                current_dictate: rand::rng().random_range(
+                    0..if b {
+                        &data.dictates_2
+                    } else {
+                        &data.dictates_34
+                    }
+                    .len(),
+                ),
+                current_line: None,
+                edit_line: String::new(),
+                edit_line_has_focus: false,
+                check_is_on: false,
+            };
+        }
+
         Action::CloseModal => {
             v.modal_state.close_modal();
         }
@@ -124,7 +141,9 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
             },
         ) => {
             *visibility_level += 1;
-            data.score += 1;
+            if *visibility_level == 18 {
+                data.score += 18;
+            }
         }
 
         (
@@ -194,6 +213,29 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
                 Operator::Divide => 4,
             };
             *show_result = true;
+        }
+
+        (
+            Action::NextDictate,
+            ModalState::Dictates {
+                current_series,
+                current_dictate,
+                current_line,
+                edit_line,
+                edit_line_has_focus: _,
+                check_is_on: _,
+            },
+        ) => {
+            *current_dictate = rand::rng().random_range(
+                0..if *current_series {
+                    &data.dictates_2
+                } else {
+                    &data.dictates_34
+                }
+                .len(),
+            );
+            *current_line = None;
+            *edit_line = String::new();
         }
 
         (Action::CloseModal, _) => {

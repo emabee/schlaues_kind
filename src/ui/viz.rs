@@ -32,6 +32,15 @@ pub enum ModalState {
         current_operator: Operator,
         show_result: bool,
     },
+
+    Dictates {
+        current_series: bool,
+        current_dictate: usize,
+        current_line: Option<usize>,
+        edit_line: String,
+        edit_line_has_focus: bool,
+        check_is_on: bool,
+    },
 }
 impl ModalState {
     pub fn is_none(&self) -> bool {
@@ -50,6 +59,7 @@ impl ModalState {
             ModalState::DeclineVerbs { .. } => "DeclineVerbs",
             ModalState::ReadTrickyWords { .. } => "ReadTrickyWords",
             ModalState::BasicMath { .. } => "BasicMath",
+            ModalState::Dictates { .. } => "Dictates",
         }
     }
 }

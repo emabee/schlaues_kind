@@ -80,5 +80,11 @@ choose_operator:
 _add:
   en: Add
   de: Addieren
+_dictate:
+  en: Let's dictate :-)
+  de: Wow - ein Diktat!
+_next_dictate:
+  en: Another dictate, please!
+  de: Noch ein Diktat, bitte!
 
 
