@@ -17,7 +17,7 @@ pub(crate) enum Action {
     NextCalculation,
     ShowResult,
 
-    Dictate(bool),
+    Dictate(usize),
     NextDictate,
 
     ShowAbout,

@@ -1,12 +1,14 @@
 use crate::{
     controller::Controller,
     data::Dictate,
+    sounds::Sound,
     ui::{Action, MEDIUM_MODAL_WIDTH, modals::button},
 };
 use egui::{
     Color32, Context, FontFamily, FontId, Id, Modal, RichText, Sides, TextEdit, TextFormat,
     text::LayoutJob,
 };
+use rodio::MixerDeviceSink;
 
 #[allow(clippy::too_many_arguments, clippy::too_many_lines)]
 pub fn dictate(
@@ -16,6 +18,8 @@ pub fn dictate(
     edit_line: &mut String,
     edit_line_has_focus: &mut bool,
     check_is_on: &mut bool,
+    sound_was_played: &mut bool,
+    sink: &MixerDeviceSink,
     controller: &mut Controller,
     ctx: &Context,
 ) {
@@ -58,6 +62,7 @@ pub fn dictate(
                     .clicked()
                 {
                     *current_line = Some(i);
+                    *sound_was_played = false;
                     edit_line.clear();
                 }
                 // ui.radio_value(current_line, Some(i), "");
@@ -109,7 +114,12 @@ pub fn dictate(
                     ui.add_space(4.);
                     ui.vertical(|ui| {
                         ui.add_space(1.5);
-                        ui.label(diff_to_original(edit_line, dictate.lines[*idx]));
+                        ui.label(diff_to_original(
+                            edit_line,
+                            dictate.lines[*idx],
+                            sink,
+                            sound_was_played,
+                        ));
                         ui.add_space(0.1);
                     });
                 }
@@ -141,7 +151,12 @@ pub fn dictate(
     });
 }
 
-fn diff_to_original(edit_line: &str, orig_line: &str) -> LayoutJob {
+fn diff_to_original(
+    edit_line: &str,
+    orig_line: &str,
+    sink: &MixerDeviceSink,
+    sound_was_played: &mut bool,
+) -> LayoutJob {
     let (good_part, starting_with_error) = split_at_diff(edit_line, orig_line);
     let mut job = LayoutJob::default();
     job.append(
@@ -178,6 +193,9 @@ fn diff_to_original(edit_line: &str, orig_line: &str) -> LayoutJob {
                     ..Default::default()
                 },
             );
+        } else if !*sound_was_played {
+            Sound::BellDing.play(sink);
+            *sound_was_played = true;
         }
     }
     job

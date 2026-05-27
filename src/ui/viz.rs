@@ -13,7 +13,9 @@ impl V {
     }
 }
 
+#[derive(Default)]
 pub enum ModalState {
+    #[default]
     None,
 
     About,
@@ -34,12 +36,13 @@ pub enum ModalState {
     },
 
     Dictates {
-        current_series: bool,
+        current_series: usize,
         current_dictate: usize,
         current_line: Option<usize>,
         edit_line: String,
         edit_line_has_focus: bool,
         check_is_on: bool,
+        sound_was_played: bool,
     },
 }
 impl ModalState {

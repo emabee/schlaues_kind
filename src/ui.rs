@@ -1,10 +1,8 @@
 mod action;
-mod assets;
 mod modals;
 pub mod the_app;
 pub mod viz;
 
-use crate::ui::assets::{IMG_BURGER, IMG_LOGO};
 pub(crate) use action::Action;
 
 // Window sizes

@@ -93,21 +93,15 @@ fn act_on_no_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
             };
         }
 
-        Action::Dictate(b) => {
+        Action::Dictate(current_series) => {
             v.modal_state = ModalState::Dictates {
-                current_series: b,
-                current_dictate: rand::rng().random_range(
-                    0..if b {
-                        &data.dictates_2
-                    } else {
-                        &data.dictates_34
-                    }
-                    .len(),
-                ),
+                current_series,
+                current_dictate: rand::rng().random_range(0..data.dictates[current_series].len()),
                 current_line: None,
                 edit_line: String::new(),
                 edit_line_has_focus: false,
                 check_is_on: false,
+                sound_was_played: false,
             };
         }
 
@@ -224,17 +218,12 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
                 edit_line,
                 edit_line_has_focus: _,
                 check_is_on: _,
+                sound_was_played,
             },
         ) => {
-            *current_dictate = rand::rng().random_range(
-                0..if *current_series {
-                    &data.dictates_2
-                } else {
-                    &data.dictates_34
-                }
-                .len(),
-            );
+            *current_dictate = rand::rng().random_range(0..data.dictates[*current_series].len());
             *current_line = None;
+            *sound_was_played = false;
             *edit_line = String::new();
         }
 
@@ -255,18 +244,16 @@ fn act_on_modal(v: &mut V, data: &mut Data, action: Action) -> bool {
     if data.score > 30 {
         data.score = 0;
 
-        sounds::play(
-            &data.sink,
-            match rand::rng().next_u32() % 6 {
-                0 => sounds::Sound::BellDing,
-                1 => sounds::Sound::BellChord,
-                2 => sounds::Sound::ChristmasBell,
-                3 => sounds::Sound::HandBell,
-                4 => sounds::Sound::ShipBell,
-                5 => sounds::Sound::Nice,
-                6_u32..=u32::MAX => unreachable!(),
-            },
-        );
+        match rand::rng().next_u32() % 6 {
+            0 => sounds::Sound::BellDing,
+            1 => sounds::Sound::BellChord,
+            2 => sounds::Sound::ChristmasBell,
+            3 => sounds::Sound::HandBell,
+            4 => sounds::Sound::ShipBell,
+            5 => sounds::Sound::Nice,
+            6_u32..=u32::MAX => unreachable!(),
+        }
+        .play(&data.sink);
     }
     true
 }

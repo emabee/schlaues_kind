@@ -2,7 +2,16 @@
 #![deny(clippy::pedantic)]
 #![forbid(unsafe_code)]
 
-use crate::ui::{WIN_HEIGHT, WIN_MIN_HEIGHT, WIN_WIDTH, the_app::TheApp};
+mod assets;
+mod controller;
+mod data;
+mod sounds;
+mod ui;
+
+use crate::{
+    assets::LOGO_BYTES,
+    ui::{WIN_HEIGHT, WIN_MIN_HEIGHT, WIN_WIDTH, the_app::TheApp},
+};
 use anyhow::{Result, anyhow};
 use eframe::{NativeOptions, run_native};
 use egui::{IconData, ViewportBuilder};
@@ -17,11 +26,6 @@ use std::{
 extern crate rust_i18n;
 
 i18n!("locales", fallback = "en");
-
-mod controller;
-mod data;
-mod sounds;
-mod ui;
 
 pub const PROG_NAME: &str = env!("CARGO_PKG_NAME");
 pub const PROG_TITLE: &str = "Schlaues Kind!";
@@ -81,6 +85,5 @@ fn load_icon() -> IconData {
     }
 }
 fn read_logo() -> Result<DynamicImage, ImageError> {
-    let bytes = include_bytes!("ui/assets/logo.png");
-    ImageReader::with_format(BufReader::new(Cursor::new(bytes)), ImageFormat::Png).decode()
+    ImageReader::with_format(BufReader::new(Cursor::new(LOGO_BYTES)), ImageFormat::Png).decode()
 }

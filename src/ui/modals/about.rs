@@ -1,7 +1,8 @@
 use crate::{
     GITHUB_LINK, PROG_TITLE, PROG_VERSION,
+    assets::LOGO_IMG,
     controller::Controller,
-    ui::{Action, IMG_LOGO, MEDIUM_MODAL_WIDTH},
+    ui::{Action, MEDIUM_MODAL_WIDTH},
 };
 use egui::{Color32, Context, FontFamily, FontId, Image, Modal, RichText, Sides};
 
@@ -13,7 +14,7 @@ pub fn show_about(controller: &mut Controller, ctx: &Context) {
                 ui.set_width(220.);
                 ui.set_height(280.);
                 ui.add_space(50.);
-                ui.add(Image::new(IMG_LOGO));
+                ui.add(Image::new(LOGO_IMG));
             });
 
             ui.vertical(|ui| {

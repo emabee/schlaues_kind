@@ -1958,6 +1958,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e7c5cedc30da3a610cac6b4ba17597bdf7152cf974e8aab3afb3d54455e371c8"
 
 [[package]]
+name = "include_optional"
+version = "1.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c5ad74261146ea73c53b02bb611bc0eb01cb96fc07a987f217e3ffaa21d167cd"
+dependencies = [
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "indexmap"
 version = "2.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3472,13 +3482,14 @@ dependencies = [
 
 [[package]]
 name = "schlaues_kind"
-version = "0.4.0"
+version = "0.5.0"
 dependencies = [
  "anyhow",
  "eframe",
  "egui",
  "egui_extras",
  "image",
+ "include_optional",
  "log",
  "rand 0.10.0",
  "rodio",

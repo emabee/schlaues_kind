@@ -1,6 +1,6 @@
 [package]
 name = "schlaues_kind"
-version = "0.4.0"
+version = "0.5.0"
 edition = "2024"
 
 [dependencies]
@@ -9,6 +9,7 @@ eframe = "0.33"
 egui = "0.33"
 egui_extras = { version = "0.33", features = ["file", "image"] }
 image = { version = "0.25", features = ["png"] }
+include_optional = "1.1"
 log = "0.4"
 rand = "0.10"
 rodio = "0.22"

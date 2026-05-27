@@ -1,9 +1,10 @@
 use crate::{
     PROG_TITLE, WIN_WIDTH,
+    assets::{BURGER_IMG, DICTATE_2, DICTATE_34, LOGO_IMG},
     controller::Controller,
     data::Data,
     ui::{
-        Action, IMG_BURGER, IMG_LOGO, modals,
+        Action, modals,
         viz::{ModalState, V},
     },
 };
@@ -34,7 +35,7 @@ impl App for TheApp<'_> {
         self.controller.act(&mut self.data, &mut self.v);
 
         // render the UI
-        top_panel(&mut self.v, &mut self.controller, ctx);
+        self.top_panel(ctx);
 
         // show modal if desired
         match self.v.modal_state {
@@ -87,135 +88,137 @@ impl App for TheApp<'_> {
                 ref mut edit_line,
                 ref mut edit_line_has_focus,
                 ref mut check_is_on,
+                ref mut sound_was_played,
             } => modals::dictate(
-                if *current_series {
-                    &self.data.dictates_2
-                } else {
-                    &self.data.dictates_34
-                },
+                &self.data.dictates[*current_series],
                 current_dictate,
                 current_line,
                 edit_line,
                 edit_line_has_focus,
                 check_is_on,
+                sound_was_played,
+                &self.data.sink,
                 &mut self.controller,
                 ctx,
             ),
         }
 
         // show the main UI
-        main_ui(&mut self.v, &mut self.controller, ctx);
+        Self::main_ui(ctx);
     }
 }
 
-pub fn top_panel(v: &mut V, controller: &mut Controller, ctx: &Context) {
-    TopBottomPanel::top("file").show(ctx, |ui| {
-        ui.add_space(2.);
-        ui.horizontal(|ui| {
-            ui.add_space(ui.available_width() - 100.);
-            burger_menu_button(v, controller, ui);
+impl TheApp<'_> {
+    fn top_panel(&mut self, ctx: &Context) {
+        TopBottomPanel::top("file").show(ctx, |ui| {
+            ui.add_space(2.);
+            ui.horizontal(|ui| {
+                ui.add_space(ui.available_width() - 100.);
+                self.burger_menu_button(ui);
+            });
+            ui.add_space(2.);
         });
-        ui.add_space(2.);
-    });
-}
+    }
 
-fn burger_menu_button(v: &mut V, controller: &mut Controller, ui: &mut egui::Ui) {
-    MenuBar::new().ui(ui, |ui| {
-        ui.menu_image_button(Image::new(IMG_BURGER), |ui| {
-            if ui
-                .add_enabled(
-                    v.modal_state.is_ready_for_modal(),
-                    Button::image_and_text(
-                        Image::new(IMG_LOGO),
-                        format!("{}", t!("About %{name}", name = PROG_TITLE)),
-                    ),
-                )
-                .clicked()
-            {
-                controller.set_action(Action::ShowAbout);
-            }
+    fn burger_menu_button(&mut self, ui: &mut egui::Ui) {
+        MenuBar::new().ui(ui, |ui| {
+            ui.menu_image_button(Image::new(BURGER_IMG), |ui| {
+                if ui
+                    .add_enabled(
+                        self.v.modal_state.is_ready_for_modal(),
+                        Button::image_and_text(
+                            Image::new(LOGO_IMG),
+                            format!("{}", t!("About %{name}", name = PROG_TITLE)),
+                        ),
+                    )
+                    .clicked()
+                {
+                    self.controller.set_action(Action::ShowAbout);
+                }
 
-            ui.separator();
+                ui.separator();
 
-            if ui
-                .add_enabled(
-                    v.modal_state.is_ready_for_modal(),
-                    Button::new(format!("{} …", t!("Unregelmässige Verben"))),
-                )
-                .clicked()
-            {
-                controller.set_action(Action::DeclineVerbs);
-            }
+                if ui
+                    .add_enabled(
+                        self.v.modal_state.is_ready_for_modal(),
+                        Button::new(format!("{} …", t!("Unregelmässige Verben"))),
+                    )
+                    .clicked()
+                {
+                    self.controller.set_action(Action::DeclineVerbs);
+                }
 
-            if ui
-                .add_enabled(
-                    v.modal_state.is_ready_for_modal(),
-                    Button::new(format!("{} …", t!("Knifflige Wörter"))),
-                )
-                .clicked()
-            {
-                controller.set_action(Action::ReadTrickyWords);
-            }
+                if ui
+                    .add_enabled(
+                        self.v.modal_state.is_ready_for_modal(),
+                        Button::new(format!("{} …", t!("Knifflige Wörter"))),
+                    )
+                    .clicked()
+                {
+                    self.controller.set_action(Action::ReadTrickyWords);
+                }
 
-            ui.separator();
+                ui.separator();
 
-            if ui
-                .add_enabled(
-                    v.modal_state.is_ready_for_modal(),
-                    Button::new(format!("{} …", t!("_calculate_until_it_smokes"))),
-                )
-                .clicked()
-            {
-                controller.set_action(Action::ShowMathBasics);
-            }
+                if ui
+                    .add_enabled(
+                        self.v.modal_state.is_ready_for_modal(),
+                        Button::new(format!("{} …", t!("_calculate_until_it_smokes"))),
+                    )
+                    .clicked()
+                {
+                    self.controller.set_action(Action::ShowMathBasics);
+                }
 
-            ui.separator();
+                ui.separator();
 
-            if ui
-                .add_enabled(
-                    v.modal_state.is_ready_for_modal(),
-                    Button::new(format!("{} 2 …", t!("_dictate"))),
-                )
-                .clicked()
-            {
-                controller.set_action(Action::Dictate(false));
-            }
+                if !self.data.dictates[DICTATE_2].is_empty()
+                    && ui
+                        .add_enabled(
+                            self.v.modal_state.is_ready_for_modal(),
+                            Button::new(format!("{} 2 …", t!("_dictate"))),
+                        )
+                        .clicked()
+                {
+                    self.controller.set_action(Action::Dictate(DICTATE_2));
+                }
 
-            if ui
-                .add_enabled(
-                    v.modal_state.is_ready_for_modal(),
-                    Button::new(format!("{} 3, 4 …", t!("_dictate"))),
-                )
-                .clicked()
-            {
-                controller.set_action(Action::Dictate(true));
-            }
+                if ui
+                    .add_enabled(
+                        self.v.modal_state.is_ready_for_modal(),
+                        Button::new(format!("{} 3, 4 …", t!("_dictate"))),
+                    )
+                    .clicked()
+                {
+                    self.controller.set_action(Action::Dictate(DICTATE_34));
+                }
 
-            ui.separator();
+                ui.separator();
 
-            if ui
-                .add_enabled(
-                    v.modal_state.is_ready_for_modal(),
-                    Button::new(format!("{}", t!("Unregelmässige Verben ausdrucken"))),
-                )
-                .clicked()
-            {
-                controller.set_action(Action::PrintVerbs);
-            }
+                if ui
+                    .add_enabled(
+                        self.v.modal_state.is_ready_for_modal(),
+                        Button::new(format!("{}", t!("Unregelmässige Verben ausdrucken"))),
+                    )
+                    .clicked()
+                {
+                    self.controller.set_action(Action::PrintVerbs);
+                }
+            });
         });
-    });
-}
+    }
 
-pub fn main_ui(_v: &mut V, _controller: &mut Controller, ctx: &Context) {
-    // show logo here
-    TopBottomPanel::top("panel_with_tabs").show(ctx, |ui| {
-        ui.horizontal(|ui| {
-            ui.add_space(300.);
-            ui.add(
-                Image::new(IMG_LOGO)
-                    .fit_to_exact_size([WIN_WIDTH, WIN_WIDTH * 0.48].into())
-                    .corner_radius(10),
-            );
+    // show only the enlarged logo
+    fn main_ui(ctx: &Context) {
+        TopBottomPanel::top("panel_with_tabs").show(ctx, |ui| {
+            ui.horizontal(|ui| {
+                ui.add_space(300.);
+                ui.add(
+                    Image::new(LOGO_IMG)
+                        .fit_to_exact_size([WIN_WIDTH, WIN_WIDTH * 0.48].into())
+                        .corner_radius(10),
+                );
+            });
         });
-    });
+    }
 }
