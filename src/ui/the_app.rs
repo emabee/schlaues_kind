@@ -10,7 +10,7 @@ use crate::{
 };
 use anyhow::Result;
 use eframe::{App, Frame};
-use egui::{Button, Context, Image, MenuBar, TopBottomPanel};
+use egui::{Button, Image, MenuBar, Panel, Ui};
 
 // MVC pattern
 pub struct TheApp<'a> {
@@ -30,7 +30,7 @@ impl TheApp<'_> {
 
 impl App for TheApp<'_> {
     // this method is called each time the UI needs to be updated, which is typically many times per second.
-    fn update(&mut self, ctx: &Context, _frame: &mut Frame) {
+    fn ui(&mut self, ctx: &mut Ui, _frame: &mut Frame) {
         // execute action set by the UI code
         self.controller.act(&mut self.data, &mut self.v);
 
@@ -109,8 +109,8 @@ impl App for TheApp<'_> {
 }
 
 impl TheApp<'_> {
-    fn top_panel(&mut self, ctx: &Context) {
-        TopBottomPanel::top("file").show(ctx, |ui| {
+    fn top_panel(&mut self, ui: &mut Ui) {
+        Panel::top("file").show(ui, |ui| {
             ui.add_space(2.);
             ui.horizontal(|ui| {
                 ui.add_space(ui.available_width() - 100.);
@@ -209,8 +209,8 @@ impl TheApp<'_> {
     }
 
     // show only the enlarged logo
-    fn main_ui(ctx: &Context) {
-        TopBottomPanel::top("panel_with_tabs").show(ctx, |ui| {
+    fn main_ui(ui: &mut Ui) {
+        Panel::top("panel_with_tabs").show(ui, |ui| {
             ui.horizontal(|ui| {
                 ui.add_space(300.);
                 ui.add(
